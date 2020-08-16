@@ -1,0 +1,12 @@
+{
+  "/[subCategory]": "pages/[subCategory].js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/api/all": "pages/api/all.js",
+  "/api/items/[currentPage]": "pages/api/items/[currentPage].js",
+  "/api/popularity/[id]": "pages/api/popularity/[id].js",
+  "/api/subCategory/[subCategory]": "pages/api/subCategory/[subCategory].js",
+  "/": "pages/index.js",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
