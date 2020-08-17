@@ -93,6 +93,22 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "/LF6":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"blockBig_container": "Card_blockBig_container__A-9iT",
+	"blockBig_image_container": "Card_blockBig_image_container__1OKA2",
+	"imageBig": "Card_imageBig__1cWrn",
+	"labelBig": "Card_labelBig__1pHIn",
+	"titleBig": "Card_titleBig__12OKm",
+	"priceBig": "Card_priceBig__3EtlP"
+};
+
+
+/***/ }),
+
 /***/ "/jkW":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -148,6 +164,34 @@ function withRouter(ComposedComponent) {
 
   return WithRouterWrapper;
 }
+
+/***/ }),
+
+/***/ "0Sn8":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"layout": "Layout_layout__9S_lM",
+	"popup_help_container": "Layout_popup_help_container__1hD8q",
+	"popup_help_container_bg": "Layout_popup_help_container_bg__Y-pe6",
+	"popup_help_wrapper": "Layout_popup_help_wrapper__2ymaD",
+	"popup_help_info": "Layout_popup_help_info__3fet5",
+	"popup_help_close": "Layout_popup_help_close__2WmCF",
+	"topline_container": "Layout_topline_container__31emU",
+	"bottom_container": "Layout_bottom_container__1qtxY",
+	"topline_wrapper": "Layout_topline_wrapper__sRgk5",
+	"bottom_wrapper": "Layout_bottom_wrapper__GEYK7",
+	"topline_box": "Layout_topline_box__2n7MQ",
+	"newsletter": "Layout_newsletter__2IW1F",
+	"arrowdown": "Layout_arrowdown__2b4O0",
+	"pomocBtn": "Layout_pomocBtn__2jyk0",
+	"bottomline_container": "Layout_bottomline_container__2GkaZ",
+	"blink": "Layout_blink__kqbMA",
+	"bottomline_wrapper": "Layout_bottomline_wrapper__3Mdc7",
+	"blinking": "Layout_blinking__1O6QQ"
+};
+
 
 /***/ }),
 
@@ -209,491 +253,6 @@ function _interopRequireWildcard(obj) {
 }
 
 module.exports = _interopRequireWildcard;
-
-/***/ }),
-
-/***/ "3Mv1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("HJQg");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-const Card = ({
-  id,
-  name,
-  description,
-  price,
-  category,
-  image,
-  createdAt
-}) => {
-  return __jsx("div", {
-    key: name,
-    className: "jsx-171183569" + " " + 'blockBig'
-  }, __jsx("a", {
-    href: "#!",
-    onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      }
-    }),
-    className: "jsx-171183569" + " " + 'blockBig_image_container'
-  }, __jsx("span", {
-    className: "jsx-171183569" + " " + 'labelBig'
-  }, "EXTRA"), __jsx("img", {
-    src: image,
-    className: "jsx-171183569" + " " + 'image'
-  })), __jsx("p", {
-    className: "jsx-171183569" + " " + 'titleBig'
-  }, name), __jsx("div", {
-    className: "jsx-171183569" + " " + 'lastpartBig'
-  }, __jsx("p", {
-    className: "jsx-171183569" + " " + 'priceBig'
-  }, price, "PLN")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "171183569"
-  }, [".blockBig.jsx-171183569{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow:hidden;}", ".blockBig_image_container.jsx-171183569{position:relative;-webkit-flex:1;-ms-flex:1;flex:1;cursor:pointer;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".blockBig.jsx-171183569 .image.jsx-171183569{max-width:100%;-webkit-transition:0.5s;transition:0.5s;}", ".blockBig.jsx-171183569:hover .image.jsx-171183569{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);opacity:0.75;}", ".labelBig.jsx-171183569{position:absolute;top:1.3rem;padding:0rem 0.9rem;line-height:2.1rem;background-color:#ff2a2a;color:#fff;right:-5rem;pointer-events:none;-webkit-transition:0.1s;transition:0.1s;opacity:0;z-index:10;}", ".blockBig_image_container.jsx-171183569:hover .labelBig.jsx-171183569{right:1.5rem;pointer-events:auto;opacity:1;}", ".titleBig.jsx-171183569{position:relative;color:#000;font-size:1.5rem;cursor:pointer;margin-top:0.3rem;}", ".titleBig.jsx-171183569:hover{color:#faab37;}", ".lastpartBig.jsx-171183569{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".priceBig.jsx-171183569{font-size:1.5rem;color:#000;}"]));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Card);
-
-/***/ }),
-
-/***/ "5Yp1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: external "styled-jsx/style"
-var style_ = __webpack_require__("HJQg");
-var style_default = /*#__PURE__*/__webpack_require__.n(style_);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./helpers/menu.js
-var menu = __webpack_require__("upzw");
-
-// CONCATENATED MODULE: ./components/DesktopMenu.js
-
-
-var __jsx = external_react_default.a.createElement;
-
-
-
-const DesktopMenu = ({
-  setMainPage
-}) => {
-  return __jsx("ul", {
-    className: "jsx-2568988605" + " " + 'bigmenu'
-  }, __jsx("li", {
-    className: "jsx-2568988605" + " " + 'nowosc'
-  }, __jsx(link_default.a, {
-    href: "/"
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, "HOME"))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "OSOBA"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].osoba.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "Z OKAZJI"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].okazja.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "KATEGORIA"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].kategoria.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "WIECEJ"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].wiecej.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx(style_default.a, {
-    id: "2568988605"
-  }, [".bigmenu.jsx-2568988605{-webkit-transform:translateX(-3rem);-ms-transform:translateX(-3rem);transform:translateX(-3rem);}", ".nowosc.jsx-2568988605:hover{border-bottom:1px solid red;}", ".bigmenu.jsx-2568988605{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:3.5rem;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:48rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605{display:inline-block;}", "p.jsx-2568988605,span.jsx-2568988605{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}", "span.jsx-2568988605{cursor:default;}", "p.jsx-2568988605:hover{background-color:#ff2a2a;color:#fff;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605{display:none;position:absolute;top:3.5rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605:hover>ul.jsx-2568988605{display:inherit;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{width:170px;float:none;display:list-item;position:relative;background-color:#f3f3f3;border-bottom:1px solid #000;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605:nth-last-child(1){border-bottom:none;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{position:relative;top:-60px;left:170px;}", "li.jsx-2568988605>a.jsx-2568988605:after{content:' +';}", "li.jsx-2568988605>a.jsx-2568988605:only-child.jsx-2568988605:after{content:'';}", "@media only screen and (max-width:1024px){.bigmenu.jsx-2568988605{display:none;}}"]));
-};
-
-/* harmony default export */ var components_DesktopMenu = (DesktopMenu);
-// CONCATENATED MODULE: ./components/Navbar.js
-
-
-var Navbar_jsx = external_react_default.a.createElement;
-
-
-
-const Navbar = ({
-  setOpenMobileMenu,
-  openMobileMenu,
-  setMainPage
-}) => {
-  return Navbar_jsx("div", {
-    className: "jsx-2354582287" + " " + 'navbar-container'
-  }, Navbar_jsx("div", {
-    className: "jsx-2354582287" + " " + 'navbar'
-  }, Navbar_jsx("div", {
-    className: "jsx-2354582287" + " " + 'navbar-logo'
-  }, Navbar_jsx(link_default.a, {
-    href: "/"
-  }, Navbar_jsx("img", {
-    alt: "logo",
-    src: "./logo.png",
-    className: "jsx-2354582287"
-  }))), Navbar_jsx(components_DesktopMenu, {
-    setMainPage: setMainPage
-  }), Navbar_jsx("button", {
-    onClick: () => setOpenMobileMenu(!openMobileMenu),
-    className: "jsx-2354582287" + " " + 'burger'
-  }, "mobile")), Navbar_jsx(style_default.a, {
-    id: "2354582287"
-  }, [".navbar-container.jsx-2354582287{position:-webkit-sticky;position:sticky;top:0;left:0;height:3.5rem;background-color:#fff;width:100%;z-index:50;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border-bottom:.5px solid #dcdcdc;}", ".navbar.jsx-2354582287{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:95%;margin:0 auto;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".navbar-logo.jsx-2354582287{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;height:3.5rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:0.5s;transition:0.5s;}", ".navbar-logo.jsx-2354582287 img.jsx-2354582287{max-width:17rem;}", ".burger.jsx-2354582287{display:none;}", "@media only screen and (max-width:1024px){.burger.jsx-2354582287{display:block;}}"]));
-};
-
-/* harmony default export */ var components_Navbar = (Navbar);
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// CONCATENATED MODULE: ./components/Footer.js
-
-
-var Footer_jsx = external_react_default.a.createElement;
-
-const Footer = () => Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer-container'
-}, Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer'
-}, Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer_left'
-}, Footer_jsx("img", {
-  src: "./logo.png",
-  alt: "logo",
-  className: "jsx-3324361197"
-}), Footer_jsx("p", {
-  className: "jsx-3324361197"
-}, "2020")), Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer_right'
-}, Footer_jsx("img", {
-  src: "./instagram.png",
-  className: "jsx-3324361197"
-}), Footer_jsx("p", {
-  className: "jsx-3324361197"
-}, "Thank you"))), Footer_jsx(style_default.a, {
-  id: "3324361197"
-}, [".footer-container{margin-top:3rem;background-color:#2d2d2d;min-height:4rem;padding:1rem;color:#fff;}", ".footer{width:76%;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".footer_left{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}", ".footer_left img{max-width:221px;-webkit-filter:invert(1);filter:invert(1);}", ".footer_right{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;}", ".footer_right img{width:34px;}", "@media only screen and (max-width:768px){.footer{width:90%;}}"]));
-
-/* harmony default export */ var components_Footer = (Footer);
-// CONCATENATED MODULE: ./components/MobileMenu.js
-
-
-var MobileMenu_jsx = external_react_default.a.createElement;
-
-
-
-
-const MobileMenu = ({
-  openMobileMenu,
-  setOpenMobileMenu,
-  setMainPage
-}) => {
-  const {
-    0: openSubmenu,
-    1: setOpenSubmenu
-  } = Object(external_react_["useState"])(false);
-  const {
-    0: windowSize,
-    1: setWindowSize
-  } = Object(external_react_["useState"])(false);
-  Object(external_react_["useEffect"])(() => {
-    if (windowSize > 1024 || window.innerWidth > 1024) return;
-
-    const onResize = () => {
-      setWindowSize(window.innerWidth);
-
-      if (windowSize > 1024) {
-        setOpenSubmenu(false);
-        setOpenMobileMenu(false);
-      }
-    };
-
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, [windowSize]);
-  return MobileMenu_jsx(external_react_default.a.Fragment, null, MobileMenu_jsx("div", {
-    onClick: () => setOpenMobileMenu(!openMobileMenu),
-    style: {
-      display: openSubmenu || !openMobileMenu ? 'none' : 'flex'
-    },
-    className: "jsx-3312725765" + " " + 'close_menu'
-  }, MobileMenu_jsx("p", {
-    className: "jsx-3312725765"
-  }), MobileMenu_jsx("p", {
-    className: "jsx-3312725765"
-  })), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu || openMobileMenu ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765" + " " + 'mobileMenu'
-  }, MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "/"
-  }, MobileMenu_jsx("a", {
-    className: "jsx-3312725765"
-  }, "NOWOSCI"))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('osoba'),
-    className: "jsx-3312725765"
-  }, "OSOBA"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'osoba' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].osoba.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el)))))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('okazja'),
-    className: "jsx-3312725765"
-  }, "Z OKAZJI"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'okazja' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].okazja.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    href: "#",
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el)))))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('kategoria'),
-    className: "jsx-3312725765"
-  }, "KATEGORIA"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'kategoria' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].kategoria.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    href: "#",
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el)))))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('wiecej'),
-    className: "jsx-3312725765"
-  }, "WIECEJ"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'wiecej' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].wiecej.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    href: "#",
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el))))))), MobileMenu_jsx(style_default.a, {
-    id: "3312725765"
-  }, [".close_menu.jsx-3312725765{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;height:31px;width:31px;top:26px;right:22px;z-index:55;cursor:pointer;}", ".close_menu.jsx-3312725765 p.jsx-3312725765{height:2px;width:31px;background-color:#000;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:14px;left:0;}", ".close_menu.jsx-3312725765 p.jsx-3312725765:nth-child(2){-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}", ".mobileMenu.jsx-3312725765{position:absolute;top:0;left:0;background-color:#fff;z-index:51;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:100vw;height:100vh;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{display:inline-block;}", "a.jsx-3312725765,span.jsx-3312725765{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;}", "a.jsx-3312725765:hover{background-color:#ff2a2a;color:#fff;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765{display:none;position:absolute;top:0;left:0;height:100vh;width:100vw;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:100;background:#fff;}", ".takeBack.jsx-3312725765{position:absolute;top:0;left:0;width:38px;-webkit-transform:rotate(90deg) translate(7px,-5px);-ms-transform:rotate(90deg) translate(7px,-5px);transform:rotate(90deg) translate(7px,-5px);height:46px;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{width:170px;float:none;display:list-item;position:relative;background-color:#fff;border-bottom:1px solid #000;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765:nth-last-child(1){border-bottom:none;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{cursor:pointer;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{position:relative;top:-60px;left:170px;}"]));
-};
-
-/* harmony default export */ var components_MobileMenu = (MobileMenu);
-// CONCATENATED MODULE: ./components/Layout.js
-
-
-var Layout_jsx = external_react_default.a.createElement;
-
-
-
-
-
-
-const Layout = ({
-  children,
-  mainPage,
-  setMainPage
-}) => {
-  const {
-    0: openPopup,
-    1: setOpenPopup
-  } = Object(external_react_["useState"])(false);
-  const {
-    0: openMobileMenu,
-    1: setOpenMobileMenu
-  } = Object(external_react_["useState"])(false);
-  Object(external_react_["useEffect"])(() => {
-    if (openPopup && openMobileMenu) {
-      document.documentElement.style.overflowY = 'hidden';
-    } else {
-      document.documentElement.style.overflowY = 'visible';
-    }
-  }, [openPopup, openMobileMenu]);
-  return Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'layout'
-  }, Layout_jsx(head_default.a, null, Layout_jsx("title", {
-    className: "jsx-770614668"
-  }, "MOJA ZTRONA")), Layout_jsx(components_MobileMenu, {
-    openMobileMenu: openMobileMenu,
-    setOpenMobileMenu: setOpenMobileMenu,
-    setMainPage: setMainPage
-  }), Layout_jsx("div", {
-    style: {
-      display: openPopup ? 'block' : 'none'
-    },
-    className: "jsx-770614668" + " " + 'popup_help_container'
-  }, Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'popup_help_wrapper'
-  }, Layout_jsx("p", {
-    className: "jsx-770614668"
-  }, "NASZA FIRMA NAWIAZALA KONTAKT AFILIACYJNY Z PONAD 100 INNYCH FIRM. DZIEKI NAM MASZ MOZLIWOSC DOJSCIA DO NAJCIEKAWSZYCH PRODUKTOW WIELU FIRM."), Layout_jsx("p", {
-    onClick: () => setOpenPopup(!openPopup),
-    className: "jsx-770614668" + " " + 'popup_help_close'
-  }, "cloze")), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'popup_help_container_bg'
-  })), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'topline_container'
-  }, Layout_jsx("div", {
-    style: {
-      justifyContent: mainPage ? 'space-between' : 'flex-end'
-    },
-    className: "jsx-770614668" + " " + 'topline_wrapper'
-  }, Layout_jsx("div", {
-    style: {
-      display: mainPage ? 'flex' : 'none'
-    },
-    className: "jsx-770614668" + " " + 'topline_box'
-  }, Layout_jsx("a", {
-    href: "#newsletter",
-    className: "jsx-770614668"
-  }, Layout_jsx("p", {
-    className: "jsx-770614668" + " " + 'newsletter'
-  }, "NEWSLETTER")), Layout_jsx("a", {
-    href: "#allImages",
-    className: "jsx-770614668"
-  }, Layout_jsx("img", {
-    src: "./arrowdown.png",
-    className: "jsx-770614668" + " " + 'arrowdown'
-  }))), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'topline_box'
-  }, Layout_jsx("p", {
-    onClick: () => setOpenPopup(!openPopup),
-    className: "jsx-770614668"
-  }, "POMOC")))), Layout_jsx(components_Navbar, {
-    setOpenMobileMenu: setOpenMobileMenu,
-    openMobileMenu: openMobileMenu,
-    setMainPage: setMainPage
-  }), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'bottom_container'
-  }, Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'bottom_box'
-  }, Layout_jsx("p", {
-    className: "jsx-770614668" + " " + 'blinking'
-  }, "MAMY WSZYSTKO CZEGO POTRZEBUJESZ. JESTESMY POLACZENI DO PONAD 100 FIRM"))), children, " ", Layout_jsx(components_Footer, null), Layout_jsx(style_default.a, {
-    id: "770614668"
-  }, ["html{font-family:'Vollkorn',serif !important;line-height:1.8em;-webkit-letter-spacing:0.2rem;-moz-letter-spacing:0.2rem;-ms-letter-spacing:0.2rem;letter-spacing:0.2rem;font-size:14px;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;}", "body{margin:0;padding:0;color:rgb(119,119,119);overflow-x:hidden;}", "ul{list-style:none;margin:0;padding:0;}", "li,a{-webkit-text-decoration:none;text-decoration:none;color:#545454;}", "p{margin:0;}", "button{border:none;background:none;}", "svg{color:#a7a7a7;}", ".btn{cursor:pointer;padding:0.6rem 0.6rem 0.4rem 0.6rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#000;background:#fff;border:1px solid #eaeaeb;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.15);box-shadow:0 1px 4px 0 rgba(0,0,0,0.15);white-space:no-wrap;}", ".layout{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;}", ".popup_help_container{position:absolute;top:0;left:0;z-index:100;display:none;height:100vh;width:100vw;}", ".popup_help_container_bg{height:100%;width:100%;opacity:0.8;background-color:#fff;}", ".popup_help_wrapper{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#000;z-index:1;height:13rem;width:32rem;background-color:#000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;padding:1rem;}", ".popup_help_close{position:absolute;top:0;right:0;}", ".popup_help_wrapper p{color:#fff;}", ".topline_container,.bottom_container{height:2.8rem;background-color:#000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".topline_container .topline_wrapper,.bottom_container .bottom_wrapper{width:95%;margin:0.3rem auto 0.1rem auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".topline_container .topline_wrapper .topline_box{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".topline_container .topline_wrapper .topline_box p{cursor:pointer;}", ".newsletter{border-right:1px solid rgb(119,119,119);padding-right:0.4rem;margin-right:0.4rem;}", ".arrowdown{-webkit-filter:invert(1);filter:invert(1);width:26px;opacity:5;cursor:pointer;-webkit-transform:translateY(4px);-ms-transform:translateY(4px);transform:translateY(4px);}", ".arrowdown{opacity:1;}", ".topline_container .topline_wrapper .topline_box p:hover{color:#fff;}", "@-webkit-keyframes blink{50%{background-color:#95ac00;}}", "@keyframes blink{50%{background-color:#95ac00;}}", ".bottom_container{-webkit-animation:blink 1s ease infinite;animation:blink 1s ease infinite;}", ".bottom_container .bottom_box{width:100%;text-align:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".bottom_container .bottom_box p{color:#fff;-webkit-letter-spacing:0.5rem;-moz-letter-spacing:0.5rem;-ms-letter-spacing:0.5rem;letter-spacing:0.5rem;line-height:1.2rem;padding:.4rem 0 .2rem 0;}", "@media only screen and (max-width:768px){.bottom_container{height:auto;}}"]));
-};
-
-/* harmony default export */ var components_Layout = __webpack_exports__["a"] = (Layout);
 
 /***/ }),
 
@@ -807,6 +366,444 @@ async function dbConnect() {
 
 /***/ }),
 
+/***/ "80PL":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: external "styled-jsx/style"
+var style_ = __webpack_require__("HJQg");
+var style_default = /*#__PURE__*/__webpack_require__.n(style_);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__("YFqc");
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+
+// EXTERNAL MODULE: ./helpers/menu.js
+var menu = __webpack_require__("upzw");
+
+// CONCATENATED MODULE: ./components/desktopmenu/DesktopMenu.js
+
+
+var __jsx = external_react_default.a.createElement;
+
+
+
+const DesktopMenu = ({
+  setMainPage
+}) => {
+  return __jsx("ul", {
+    className: "jsx-2568988605" + " " + 'bigmenu'
+  }, __jsx("li", {
+    className: "jsx-2568988605" + " " + 'nowosc'
+  }, __jsx(link_default.a, {
+    href: "/"
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, "HOME"))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "OSOBA"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].osoba.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "Z OKAZJI"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].okazja.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "KATEGORIA"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].kategoria.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "WIECEJ"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].wiecej.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx(style_default.a, {
+    id: "2568988605"
+  }, [".bigmenu.jsx-2568988605{-webkit-transform:translateX(-3rem);-ms-transform:translateX(-3rem);transform:translateX(-3rem);}", ".nowosc.jsx-2568988605:hover{border-bottom:1px solid red;}", ".bigmenu.jsx-2568988605{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:3.5rem;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:48rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605{display:inline-block;}", "p.jsx-2568988605,span.jsx-2568988605{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}", "span.jsx-2568988605{cursor:default;}", "p.jsx-2568988605:hover{background-color:#ff2a2a;color:#fff;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605{display:none;position:absolute;top:3.5rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605:hover>ul.jsx-2568988605{display:inherit;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{width:170px;float:none;display:list-item;position:relative;background-color:#f3f3f3;border-bottom:1px solid #000;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605:nth-last-child(1){border-bottom:none;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{position:relative;top:-60px;left:170px;}", "li.jsx-2568988605>a.jsx-2568988605:after{content:' +';}", "li.jsx-2568988605>a.jsx-2568988605:only-child.jsx-2568988605:after{content:'';}", "@media only screen and (max-width:1024px){.bigmenu.jsx-2568988605{display:none;}}"]));
+};
+
+/* harmony default export */ var desktopmenu_DesktopMenu = (DesktopMenu);
+// EXTERNAL MODULE: ./components/navbar/Navbar.module.scss
+var Navbar_module = __webpack_require__("wXM4");
+var Navbar_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_module);
+
+// CONCATENATED MODULE: ./components/navbar/Navbar.js
+
+
+var Navbar_jsx = external_react_default.a.createElement;
+
+
+
+
+const Navbar = ({
+  setOpenMobileMenu,
+  openMobileMenu,
+  setMainPage
+}) => {
+  return Navbar_jsx("div", {
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.navbar_container || "")
+  }, Navbar_jsx("div", {
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.navbar_wrapper || "")
+  }, Navbar_jsx("div", {
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.navbar_logo || "")
+  }, Navbar_jsx(link_default.a, {
+    href: "/"
+  }, Navbar_jsx("img", {
+    alt: "logo",
+    src: "./logo.png",
+    className: "jsx-2085888330"
+  }))), Navbar_jsx(desktopmenu_DesktopMenu, {
+    setMainPage: setMainPage
+  }), Navbar_jsx("button", {
+    onClick: () => setOpenMobileMenu(!openMobileMenu),
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.burger || "")
+  }, "mobile")), Navbar_jsx(style_default.a, {
+    id: "2085888330"
+  }, []));
+};
+
+/* harmony default export */ var navbar_Navbar = (Navbar);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+
+// EXTERNAL MODULE: ./components/footer/Footer.module.scss
+var Footer_module = __webpack_require__("GLbt");
+var Footer_module_default = /*#__PURE__*/__webpack_require__.n(Footer_module);
+
+// CONCATENATED MODULE: ./components/footer/Footer.js
+
+
+var Footer_jsx = external_react_default.a.createElement;
+
+
+const Footer = () => Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_container || "")
+}, Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_wrapper || "")
+}, Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_left || "")
+}, Footer_jsx("img", {
+  src: "./logo.png",
+  alt: "logo",
+  className: "jsx-2085888330"
+}), Footer_jsx("p", {
+  className: "jsx-2085888330"
+}, "2020")), Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_right || "")
+}, Footer_jsx("img", {
+  src: "./instagram.png",
+  className: "jsx-2085888330"
+}), Footer_jsx("p", {
+  className: "jsx-2085888330"
+}, "Thank you"))), Footer_jsx(style_default.a, {
+  id: "2085888330"
+}, []));
+
+/* harmony default export */ var footer_Footer = (Footer);
+// CONCATENATED MODULE: ./components/mobilemenu/MobileMenu.js
+
+
+var MobileMenu_jsx = external_react_default.a.createElement;
+
+
+
+
+const MobileMenu = ({
+  openMobileMenu,
+  setOpenMobileMenu,
+  setMainPage
+}) => {
+  const {
+    0: openSubmenu,
+    1: setOpenSubmenu
+  } = Object(external_react_["useState"])(false);
+  const {
+    0: windowSize,
+    1: setWindowSize
+  } = Object(external_react_["useState"])(false);
+  Object(external_react_["useEffect"])(() => {
+    if (windowSize > 1024 || window.innerWidth > 1024) return;
+
+    const onResize = () => {
+      setWindowSize(window.innerWidth);
+
+      if (windowSize > 1024) {
+        setOpenSubmenu(false);
+        setOpenMobileMenu(false);
+      }
+    };
+
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [windowSize]);
+  return MobileMenu_jsx(external_react_default.a.Fragment, null, MobileMenu_jsx("div", {
+    onClick: () => setOpenMobileMenu(!openMobileMenu),
+    style: {
+      display: openSubmenu || !openMobileMenu ? 'none' : 'flex'
+    },
+    className: "jsx-3312725765" + " " + 'close_menu'
+  }, "X"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu || openMobileMenu ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765" + " " + 'mobileMenu'
+  }, MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "/"
+  }, MobileMenu_jsx("a", {
+    className: "jsx-3312725765"
+  }, "NOWOSCI"))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('osoba'),
+    className: "jsx-3312725765"
+  }, "OSOBA"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'osoba' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].osoba.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el)))))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('okazja'),
+    className: "jsx-3312725765"
+  }, "Z OKAZJI"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'okazja' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].okazja.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    href: "#",
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el)))))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('kategoria'),
+    className: "jsx-3312725765"
+  }, "KATEGORIA"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'kategoria' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].kategoria.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    href: "#",
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el)))))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('wiecej'),
+    className: "jsx-3312725765"
+  }, "WIECEJ"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'wiecej' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].wiecej.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    href: "#",
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el))))))), MobileMenu_jsx(style_default.a, {
+    id: "3312725765"
+  }, [".close_menu.jsx-3312725765{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;height:31px;width:31px;top:26px;right:22px;z-index:55;cursor:pointer;}", ".close_menu.jsx-3312725765 p.jsx-3312725765{height:2px;width:31px;background-color:#000;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:14px;left:0;}", ".close_menu.jsx-3312725765 p.jsx-3312725765:nth-child(2){-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}", ".mobileMenu.jsx-3312725765{position:absolute;top:0;left:0;background-color:#fff;z-index:51;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:100vw;height:100vh;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{display:inline-block;}", "a.jsx-3312725765,span.jsx-3312725765{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;}", "a.jsx-3312725765:hover{background-color:#ff2a2a;color:#fff;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765{display:none;position:absolute;top:0;left:0;height:100vh;width:100vw;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:100;background:#fff;}", ".takeBack.jsx-3312725765{position:absolute;top:0;left:0;width:38px;-webkit-transform:rotate(90deg) translate(7px,-5px);-ms-transform:rotate(90deg) translate(7px,-5px);transform:rotate(90deg) translate(7px,-5px);height:46px;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{width:170px;float:none;display:list-item;position:relative;background-color:#fff;border-bottom:1px solid #000;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765:nth-last-child(1){border-bottom:none;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{cursor:pointer;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{position:relative;top:-60px;left:170px;}"]));
+};
+
+/* harmony default export */ var mobilemenu_MobileMenu = (MobileMenu);
+// EXTERNAL MODULE: ./components/layout/Layout.module.scss
+var Layout_module = __webpack_require__("0Sn8");
+var Layout_module_default = /*#__PURE__*/__webpack_require__.n(Layout_module);
+
+// CONCATENATED MODULE: ./components/layout/Layout.js
+
+
+var Layout_jsx = external_react_default.a.createElement;
+
+
+
+
+
+
+
+const Layout = ({
+  children,
+  mainPage,
+  setMainPage
+}) => {
+  const {
+    0: openPopup,
+    1: setOpenPopup
+  } = Object(external_react_["useState"])(false);
+  const {
+    0: openMobileMenu,
+    1: setOpenMobileMenu
+  } = Object(external_react_["useState"])(false);
+  Object(external_react_["useEffect"])(() => {
+    if (openPopup || openMobileMenu) {
+      document.documentElement.style.overflowY = 'hidden';
+    } else {
+      document.documentElement.style.overflowY = 'visible';
+    }
+  }, [openPopup, openMobileMenu]);
+  return Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.layout || "")
+  }, Layout_jsx(head_default.a, null, Layout_jsx("title", {
+    className: "jsx-2085888330"
+  }, "MOJA ZTRONA")), Layout_jsx(mobilemenu_MobileMenu, {
+    openMobileMenu: openMobileMenu,
+    setOpenMobileMenu: setOpenMobileMenu,
+    setMainPage: setMainPage
+  }), Layout_jsx("div", {
+    style: {
+      display: openPopup ? 'block' : 'none'
+    },
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_container || "")
+  }, Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_wrapper || "")
+  }, Layout_jsx("p", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_info || "")
+  }, "NASZA FIRMA NAWIAZALA KONTAKT AFILIACYJNY Z PONAD 100 INNYCH FIRM. DZIEKI NAM MASZ MOZLIWOSC DOJSCIA DO NAJCIEKAWSZYCH PRODUKTOW WIELU FIRM."), Layout_jsx("p", {
+    onClick: () => setOpenPopup(!openPopup),
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_close || "")
+  }, "cloze")), Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_container_bg || "")
+  })), Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.topline_container || "")
+  }, Layout_jsx("div", {
+    style: {
+      justifyContent: mainPage ? 'space-between' : 'flex-end'
+    },
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.topline_wrapper || "")
+  }, Layout_jsx("div", {
+    style: {
+      display: mainPage ? 'flex' : 'none'
+    },
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.topline_box || "")
+  }, Layout_jsx("a", {
+    href: "#newsletter",
+    className: "jsx-2085888330"
+  }, Layout_jsx("p", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.newsletter || "")
+  }, "NEWSLETTER")), Layout_jsx("a", {
+    href: "#allImages",
+    className: "jsx-2085888330"
+  }, Layout_jsx("img", {
+    src: "./arrowdown.png",
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.arrowdown || "")
+  }))), Layout_jsx("div", {
+    onClick: () => setOpenPopup(!openPopup),
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.pomocBtn || "")
+  }, "POMOC"))), Layout_jsx(navbar_Navbar, {
+    setOpenMobileMenu: setOpenMobileMenu,
+    openMobileMenu: openMobileMenu,
+    setMainPage: setMainPage
+  }), Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.bottomline_container || "")
+  }, Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.bottomline_wrapper || "")
+  }, Layout_jsx("p", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.blinking || "")
+  }, "MAMY WSZYSTKO CZEGO POTRZEBUJESZ. JESTESMY POLACZENI DO PONAD 100 FIRM"))), children, " ", Layout_jsx(footer_Footer, null), Layout_jsx(style_default.a, {
+    id: "2085888330"
+  }, []));
+};
+
+/* harmony default export */ var layout_Layout = __webpack_exports__["a"] = (Layout);
+
+/***/ }),
+
 /***/ "8xkj":
 /***/ (function(module, exports) {
 
@@ -833,11 +830,11 @@ var style_default = /*#__PURE__*/__webpack_require__.n(style_);
 var external_react_ = __webpack_require__("cDcd");
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: ./components/Layout.js + 4 modules
-var Layout = __webpack_require__("5Yp1");
+// EXTERNAL MODULE: ./components/layout/Layout.js + 4 modules
+var Layout = __webpack_require__("80PL");
 
-// EXTERNAL MODULE: ./components/Card.js
-var Card = __webpack_require__("3Mv1");
+// EXTERNAL MODULE: ./components/card/Card.js
+var Card = __webpack_require__("IObC");
 
 // EXTERNAL MODULE: external "keen-slider/react"
 var react_ = __webpack_require__("ogra");
@@ -851,7 +848,7 @@ const getProperImages = category => {
   obj.filter(el => el.category === category);
   return obj[0].data;
 };
-// CONCATENATED MODULE: ./components/RandomPicture.js
+// CONCATENATED MODULE: ./components/randompicture/RandomPicture.js
 
 
 var __jsx = external_react_default.a.createElement;
@@ -897,7 +894,7 @@ const RandomPicture = ({
   }, [".fader.jsx-276206109{height:38rem;position:relative;overflow:hidden;width:50rem;margin:0 auto;}", ".fader__slide.jsx-276206109{width:100%;height:100%;position:absolute;top:0;}", ".fader.jsx-276206109 img.jsx-276206109{width:100%;height:auto;position:absolute;top:50%;left:50%;-webkit-transform:translateY(-50%) translateX(-50%);-ms-transform:translateY(-50%) translateX(-50%);transform:translateY(-50%) translateX(-50%);-webkit-transform:translateY(-50%) translateX(-50%);}", "@media only screen and (max-width:768px){.fader.jsx-276206109{height:63vw;width:100%;}}"]));
 };
 
-/* harmony default export */ var components_RandomPicture = (RandomPicture);
+/* harmony default export */ var randompicture_RandomPicture = (RandomPicture);
 // CONCATENATED MODULE: ./helpers/title.js
 const title_obj = [{
   title: 'mezczyzna',
@@ -938,21 +935,21 @@ const Category = ({
   const title = titleFn(categoryData[0].subCategory);
   console.log(categoryData, 'categoryData');
   return _subCategory_jsx(Layout["a" /* default */], null, _subCategory_jsx("div", {
-    className: "jsx-1950414075" + " " + 'category_container'
+    className: "jsx-283917303" + " " + 'category_container'
   }, _subCategory_jsx("div", {
-    className: "jsx-1950414075" + " " + 'category_title'
+    className: "jsx-283917303" + " " + 'category_title'
   }, _subCategory_jsx("p", {
-    className: "jsx-1950414075"
+    className: "jsx-283917303"
   }, title.description)), _subCategory_jsx("div", {
-    className: "jsx-1950414075" + " " + 'randompic'
-  }, _subCategory_jsx(components_RandomPicture, {
+    className: "jsx-283917303" + " " + 'randompic'
+  }, _subCategory_jsx(randompicture_RandomPicture, {
     category: categoryData[0].subCategory
   })), _subCategory_jsx("div", {
-    className: "jsx-1950414075" + " " + 'empty'
+    className: "jsx-283917303" + " " + 'empty'
   }, _subCategory_jsx("p", {
-    className: "jsx-1950414075"
+    className: "jsx-283917303"
   }, "Ponad 100 roznych sklepow")), _subCategory_jsx("div", {
-    className: "jsx-1950414075" + " " + 'category_wrapper'
+    className: "jsx-283917303" + " " + 'category_wrapper'
   }, categoryData.map(el => _subCategory_jsx(Card["a" /* default */], {
     id: el._id,
     name: el.name,
@@ -963,8 +960,8 @@ const Category = ({
     createdAt: el.createdAt,
     key: el.name
   }))), _subCategory_jsx(style_default.a, {
-    id: "1950414075"
-  }, [".category_title.jsx-1950414075{text-align:center;margin:3rem 0;font-size:3rem;color:#000;}", ".empty.jsx-1950414075{margin:3rem 0;background-color:#000;height:6rem;text-align:center;}", ".empty.jsx-1950414075 p.jsx-1950414075{color:#fff;font-size:3rem;line-height:6rem;}", ".randompic.jsx-1950414075{margin:0 1rem;}", ".category_wrapper.jsx-1950414075{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.9rem,33.4rem));grid-auto-rows:28.14rem;grid-gap:1.3rem;grid-row-gap:4rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:2rem 1rem 0 1rem;}", "@media only screen and (max-width:768px){.category_title.jsx-1950414075{font-size:1.8rem;}.empty.jsx-1950414075{height:5rem;}.empty.jsx-1950414075 p.jsx-1950414075{font-size:1.8rem;line-height:5rem;}}", "@media only screen and (max-width:320px){.category_wrapper.jsx-1950414075{grid-auto-rows:25.14rem;}}"])));
+    id: "283917303"
+  }, [".category_title.jsx-283917303{text-align:center;margin:3rem 0;font-size:3rem;color:#000;}", ".empty.jsx-283917303{margin:3rem 0;background-color:#000;height:6rem;text-align:center;}", ".empty.jsx-283917303 p.jsx-283917303{color:#fff;font-size:3rem;line-height:6rem;}", ".randompic.jsx-283917303{margin:0 1rem;}", ".category_wrapper.jsx-283917303{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.9rem,19.8rem));grid-auto-rows:23.14rem;grid-gap:1.3rem;grid-row-gap:4rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:2rem 1rem 0 1rem;}", "@media only screen and (max-width:768px){.category_title.jsx-283917303{font-size:1.8rem;}.empty.jsx-283917303{height:5rem;}.empty.jsx-283917303 p.jsx-283917303{font-size:1.8rem;line-height:5rem;}}", "@media only screen and (max-width:320px){.category_wrapper.jsx-283917303{grid-auto-rows:25.14rem;}}"])));
 };
 
 /* harmony default export */ var _subCategory_ = __webpack_exports__["default"] = (Category);
@@ -978,11 +975,11 @@ const getStaticProps = async ctx => {
   // );
   // const categoryData = await categoryResult.json();
 
-  console.log(subCat, items);
   return {
     props: {
       categoryData: JSON.parse(JSON.stringify(items))
-    }
+    },
+    revalidate: 1
   };
 };
 const getStaticPaths = async () => {
@@ -1053,10 +1050,79 @@ module.exports = require("mongoose");
 
 /***/ }),
 
+/***/ "GLbt":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"footer_container": "Footer_footer_container__2g4O-",
+	"footer_wrapper": "Footer_footer_wrapper__1BhbG",
+	"footer_left": "Footer_footer_left__3k1kN",
+	"footer_right": "Footer_footer_right__3Nywy",
+	"footer": "Footer_footer__17mGM"
+};
+
+
+/***/ }),
+
 /***/ "HJQg":
 /***/ (function(module, exports) {
 
 module.exports = require("styled-jsx/style");
+
+/***/ }),
+
+/***/ "IObC":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("HJQg");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Card_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("/LF6");
+/* harmony import */ var _Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Card_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+const Card = ({
+  id,
+  name,
+  description,
+  price,
+  category,
+  image,
+  createdAt
+}) => {
+  return __jsx("div", {
+    key: name,
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.blockBig_container || "")
+  }, __jsx("a", {
+    href: "#!",
+    onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      }
+    }),
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.blockBig_image_container || "")
+  }, __jsx("span", {
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.labelBig || "")
+  }, "EXTRA"), __jsx("img", {
+    src: image,
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.imageBig || "")
+  })), __jsx("p", {
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.titleBig || "")
+  }, name), __jsx("p", {
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.priceBig || "")
+  }, price, "PLN"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2085888330"
+  }, []));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Card);
 
 /***/ }),
 
@@ -2727,6 +2793,20 @@ const menu = {
 // ];
 
 const pathMenu = ['mezczyzna', 'kobieta'];
+
+/***/ }),
+
+/***/ "wXM4":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"navbar_container": "Navbar_navbar_container__2Fopq",
+	"navbar_wrapper": "Navbar_navbar_wrapper__3JnG9",
+	"navbar_logo": "Navbar_navbar_logo__2r8W5",
+	"burger": "Navbar_burger__1pUWg"
+};
+
 
 /***/ }),
 

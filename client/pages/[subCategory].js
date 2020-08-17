@@ -1,14 +1,14 @@
-import Layout from '../components/Layout';
-import Card from '../components/Card';
-import RandomPicture from '../components/RandomPicture';
+import Layout from '../components/layout/Layout';
+import Card from '../components/card/Card';
+import RandomPicture from '../components/randompicture/RandomPicture';
 import { titleFn } from '../helpers/title';
-import Item from '../models/itemModel'
+import Item from '../models/itemModel';
 import dbConnect from '../utils/dbConnection';
-import { pathMenu } from '../helpers/menu'
+import { pathMenu } from '../helpers/menu';
 
 const Category = ({ categoryData }) => {
   const title = titleFn(categoryData[0].subCategory);
-  console.log(categoryData, 'categoryData')
+  console.log(categoryData, 'categoryData');
   return (
     <Layout>
       <div className='category_container'>
@@ -22,7 +22,7 @@ const Category = ({ categoryData }) => {
           <p>Ponad 100 roznych sklepow</p>
         </div>
         <div className='category_wrapper'>
-          {categoryData.map(el => (
+          {categoryData.map((el) => (
             <Card
               id={el._id}
               name={el.name}
@@ -66,8 +66,8 @@ const Category = ({ categoryData }) => {
             // *** LIST ***
             .category_wrapper {
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(15.9rem, 33.4rem));
-              grid-auto-rows: 28.14rem;
+              grid-template-columns: repeat(auto-fit, minmax(15.9rem, 19.8rem));
+              grid-auto-rows: 23.14rem;
               grid-gap: 1.3rem;
               grid-row-gap: 4rem;
               justify-content: center;
@@ -110,15 +110,18 @@ export const getStaticProps = async (ctx) => {
   //   `http://localhost:3000/subCategory/${subCategory}`
   // );
   // const categoryData = await categoryResult.json();
-  console.log(subCat, items)
-  return { props: { categoryData: JSON.parse(JSON.stringify(items)) } };
+
+  return {
+    props: { categoryData: JSON.parse(JSON.stringify(items)) },
+    revalidate: 1,
+  };
 };
 
 export const getStaticPaths = async () => {
   const paths = pathMenu.map((el) => ({
     params: { subCategory: el },
-  }))
-  console.log(paths, 'paths')
+  }));
+  console.log(paths, 'paths');
   return {
     // paths: [
     //   {

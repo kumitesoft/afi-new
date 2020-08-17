@@ -1,12 +1,37 @@
 import Head from 'next/head';
 import 'keen-slider/keen-slider.min.css';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+import { Router } from 'next/dist/client/router';
+import '../style/styles.scss';
+
+NProgress.configure({
+  showSpinner: false,
+  trickleRate: 0.1,
+  trickleSpeed: 300,
+});
+
+Router.events.on('routeChangeStart', () => {
+  NProgress.start();
+});
+
+Router.events.on('routeChangeComplete', () => {
+  NProgress.done();
+});
+
+Router.events.on('routeChangeError', () => {
+  NProgress.done();
+});
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Vollkorn&display=swap'
+          rel='stylesheet'
+        />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <Component {...pageProps} />
     </>

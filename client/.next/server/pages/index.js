@@ -93,6 +93,22 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "/LF6":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"blockBig_container": "Card_blockBig_container__A-9iT",
+	"blockBig_image_container": "Card_blockBig_image_container__1OKA2",
+	"imageBig": "Card_imageBig__1cWrn",
+	"labelBig": "Card_labelBig__1pHIn",
+	"titleBig": "Card_titleBig__12OKm",
+	"priceBig": "Card_priceBig__3EtlP"
+};
+
+
+/***/ }),
+
 /***/ "/jkW":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -140,6 +156,34 @@ function withRouter(ComposedComponent) {
 
   return WithRouterWrapper;
 }
+
+/***/ }),
+
+/***/ "0Sn8":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"layout": "Layout_layout__9S_lM",
+	"popup_help_container": "Layout_popup_help_container__1hD8q",
+	"popup_help_container_bg": "Layout_popup_help_container_bg__Y-pe6",
+	"popup_help_wrapper": "Layout_popup_help_wrapper__2ymaD",
+	"popup_help_info": "Layout_popup_help_info__3fet5",
+	"popup_help_close": "Layout_popup_help_close__2WmCF",
+	"topline_container": "Layout_topline_container__31emU",
+	"bottom_container": "Layout_bottom_container__1qtxY",
+	"topline_wrapper": "Layout_topline_wrapper__sRgk5",
+	"bottom_wrapper": "Layout_bottom_wrapper__GEYK7",
+	"topline_box": "Layout_topline_box__2n7MQ",
+	"newsletter": "Layout_newsletter__2IW1F",
+	"arrowdown": "Layout_arrowdown__2b4O0",
+	"pomocBtn": "Layout_pomocBtn__2jyk0",
+	"bottomline_container": "Layout_bottomline_container__2GkaZ",
+	"blink": "Layout_blink__kqbMA",
+	"bottomline_wrapper": "Layout_bottomline_wrapper__3Mdc7",
+	"blinking": "Layout_blinking__1O6QQ"
+};
+
 
 /***/ }),
 
@@ -208,491 +252,6 @@ function _interopRequireWildcard(obj) {
 }
 
 module.exports = _interopRequireWildcard;
-
-/***/ }),
-
-/***/ "3Mv1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("HJQg");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-const Card = ({
-  id,
-  name,
-  description,
-  price,
-  category,
-  image,
-  createdAt
-}) => {
-  return __jsx("div", {
-    key: name,
-    className: "jsx-171183569" + " " + 'blockBig'
-  }, __jsx("a", {
-    href: "#!",
-    onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      }
-    }),
-    className: "jsx-171183569" + " " + 'blockBig_image_container'
-  }, __jsx("span", {
-    className: "jsx-171183569" + " " + 'labelBig'
-  }, "EXTRA"), __jsx("img", {
-    src: image,
-    className: "jsx-171183569" + " " + 'image'
-  })), __jsx("p", {
-    className: "jsx-171183569" + " " + 'titleBig'
-  }, name), __jsx("div", {
-    className: "jsx-171183569" + " " + 'lastpartBig'
-  }, __jsx("p", {
-    className: "jsx-171183569" + " " + 'priceBig'
-  }, price, "PLN")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "171183569"
-  }, [".blockBig.jsx-171183569{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow:hidden;}", ".blockBig_image_container.jsx-171183569{position:relative;-webkit-flex:1;-ms-flex:1;flex:1;cursor:pointer;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".blockBig.jsx-171183569 .image.jsx-171183569{max-width:100%;-webkit-transition:0.5s;transition:0.5s;}", ".blockBig.jsx-171183569:hover .image.jsx-171183569{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);opacity:0.75;}", ".labelBig.jsx-171183569{position:absolute;top:1.3rem;padding:0rem 0.9rem;line-height:2.1rem;background-color:#ff2a2a;color:#fff;right:-5rem;pointer-events:none;-webkit-transition:0.1s;transition:0.1s;opacity:0;z-index:10;}", ".blockBig_image_container.jsx-171183569:hover .labelBig.jsx-171183569{right:1.5rem;pointer-events:auto;opacity:1;}", ".titleBig.jsx-171183569{position:relative;color:#000;font-size:1.5rem;cursor:pointer;margin-top:0.3rem;}", ".titleBig.jsx-171183569:hover{color:#faab37;}", ".lastpartBig.jsx-171183569{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".priceBig.jsx-171183569{font-size:1.5rem;color:#000;}"]));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Card);
-
-/***/ }),
-
-/***/ "5Yp1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: external "styled-jsx/style"
-var style_ = __webpack_require__("HJQg");
-var style_default = /*#__PURE__*/__webpack_require__.n(style_);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./helpers/menu.js
-var menu = __webpack_require__("upzw");
-
-// CONCATENATED MODULE: ./components/DesktopMenu.js
-
-
-var __jsx = external_react_default.a.createElement;
-
-
-
-const DesktopMenu = ({
-  setMainPage
-}) => {
-  return __jsx("ul", {
-    className: "jsx-2568988605" + " " + 'bigmenu'
-  }, __jsx("li", {
-    className: "jsx-2568988605" + " " + 'nowosc'
-  }, __jsx(link_default.a, {
-    href: "/"
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, "HOME"))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "OSOBA"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].osoba.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "Z OKAZJI"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].okazja.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "KATEGORIA"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].kategoria.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx("li", {
-    className: "jsx-2568988605"
-  }, __jsx("span", {
-    className: "jsx-2568988605"
-  }, "WIECEJ"), __jsx("ul", {
-    className: "jsx-2568988605"
-  }, menu["a" /* menu */].wiecej.map(el => __jsx("li", {
-    key: el,
-    className: "jsx-2568988605"
-  }, __jsx(link_default.a, {
-    onClick: () => setMainPage(false),
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, __jsx("p", {
-    className: "jsx-2568988605"
-  }, el)))))), __jsx(style_default.a, {
-    id: "2568988605"
-  }, [".bigmenu.jsx-2568988605{-webkit-transform:translateX(-3rem);-ms-transform:translateX(-3rem);transform:translateX(-3rem);}", ".nowosc.jsx-2568988605:hover{border-bottom:1px solid red;}", ".bigmenu.jsx-2568988605{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:3.5rem;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:48rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605{display:inline-block;}", "p.jsx-2568988605,span.jsx-2568988605{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}", "span.jsx-2568988605{cursor:default;}", "p.jsx-2568988605:hover{background-color:#ff2a2a;color:#fff;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605{display:none;position:absolute;top:3.5rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605:hover>ul.jsx-2568988605{display:inherit;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{width:170px;float:none;display:list-item;position:relative;background-color:#f3f3f3;border-bottom:1px solid #000;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605:nth-last-child(1){border-bottom:none;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{position:relative;top:-60px;left:170px;}", "li.jsx-2568988605>a.jsx-2568988605:after{content:' +';}", "li.jsx-2568988605>a.jsx-2568988605:only-child.jsx-2568988605:after{content:'';}", "@media only screen and (max-width:1024px){.bigmenu.jsx-2568988605{display:none;}}"]));
-};
-
-/* harmony default export */ var components_DesktopMenu = (DesktopMenu);
-// CONCATENATED MODULE: ./components/Navbar.js
-
-
-var Navbar_jsx = external_react_default.a.createElement;
-
-
-
-const Navbar = ({
-  setOpenMobileMenu,
-  openMobileMenu,
-  setMainPage
-}) => {
-  return Navbar_jsx("div", {
-    className: "jsx-2354582287" + " " + 'navbar-container'
-  }, Navbar_jsx("div", {
-    className: "jsx-2354582287" + " " + 'navbar'
-  }, Navbar_jsx("div", {
-    className: "jsx-2354582287" + " " + 'navbar-logo'
-  }, Navbar_jsx(link_default.a, {
-    href: "/"
-  }, Navbar_jsx("img", {
-    alt: "logo",
-    src: "./logo.png",
-    className: "jsx-2354582287"
-  }))), Navbar_jsx(components_DesktopMenu, {
-    setMainPage: setMainPage
-  }), Navbar_jsx("button", {
-    onClick: () => setOpenMobileMenu(!openMobileMenu),
-    className: "jsx-2354582287" + " " + 'burger'
-  }, "mobile")), Navbar_jsx(style_default.a, {
-    id: "2354582287"
-  }, [".navbar-container.jsx-2354582287{position:-webkit-sticky;position:sticky;top:0;left:0;height:3.5rem;background-color:#fff;width:100%;z-index:50;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border-bottom:.5px solid #dcdcdc;}", ".navbar.jsx-2354582287{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:95%;margin:0 auto;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".navbar-logo.jsx-2354582287{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;height:3.5rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:0.5s;transition:0.5s;}", ".navbar-logo.jsx-2354582287 img.jsx-2354582287{max-width:17rem;}", ".burger.jsx-2354582287{display:none;}", "@media only screen and (max-width:1024px){.burger.jsx-2354582287{display:block;}}"]));
-};
-
-/* harmony default export */ var components_Navbar = (Navbar);
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// CONCATENATED MODULE: ./components/Footer.js
-
-
-var Footer_jsx = external_react_default.a.createElement;
-
-const Footer = () => Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer-container'
-}, Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer'
-}, Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer_left'
-}, Footer_jsx("img", {
-  src: "./logo.png",
-  alt: "logo",
-  className: "jsx-3324361197"
-}), Footer_jsx("p", {
-  className: "jsx-3324361197"
-}, "2020")), Footer_jsx("div", {
-  className: "jsx-3324361197" + " " + 'footer_right'
-}, Footer_jsx("img", {
-  src: "./instagram.png",
-  className: "jsx-3324361197"
-}), Footer_jsx("p", {
-  className: "jsx-3324361197"
-}, "Thank you"))), Footer_jsx(style_default.a, {
-  id: "3324361197"
-}, [".footer-container{margin-top:3rem;background-color:#2d2d2d;min-height:4rem;padding:1rem;color:#fff;}", ".footer{width:76%;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".footer_left{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}", ".footer_left img{max-width:221px;-webkit-filter:invert(1);filter:invert(1);}", ".footer_right{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;}", ".footer_right img{width:34px;}", "@media only screen and (max-width:768px){.footer{width:90%;}}"]));
-
-/* harmony default export */ var components_Footer = (Footer);
-// CONCATENATED MODULE: ./components/MobileMenu.js
-
-
-var MobileMenu_jsx = external_react_default.a.createElement;
-
-
-
-
-const MobileMenu = ({
-  openMobileMenu,
-  setOpenMobileMenu,
-  setMainPage
-}) => {
-  const {
-    0: openSubmenu,
-    1: setOpenSubmenu
-  } = Object(external_react_["useState"])(false);
-  const {
-    0: windowSize,
-    1: setWindowSize
-  } = Object(external_react_["useState"])(false);
-  Object(external_react_["useEffect"])(() => {
-    if (windowSize > 1024 || window.innerWidth > 1024) return;
-
-    const onResize = () => {
-      setWindowSize(window.innerWidth);
-
-      if (windowSize > 1024) {
-        setOpenSubmenu(false);
-        setOpenMobileMenu(false);
-      }
-    };
-
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, [windowSize]);
-  return MobileMenu_jsx(external_react_default.a.Fragment, null, MobileMenu_jsx("div", {
-    onClick: () => setOpenMobileMenu(!openMobileMenu),
-    style: {
-      display: openSubmenu || !openMobileMenu ? 'none' : 'flex'
-    },
-    className: "jsx-3312725765" + " " + 'close_menu'
-  }, MobileMenu_jsx("p", {
-    className: "jsx-3312725765"
-  }), MobileMenu_jsx("p", {
-    className: "jsx-3312725765"
-  })), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu || openMobileMenu ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765" + " " + 'mobileMenu'
-  }, MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "/"
-  }, MobileMenu_jsx("a", {
-    className: "jsx-3312725765"
-  }, "NOWOSCI"))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('osoba'),
-    className: "jsx-3312725765"
-  }, "OSOBA"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'osoba' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].osoba.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el)))))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('okazja'),
-    className: "jsx-3312725765"
-  }, "Z OKAZJI"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'okazja' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].okazja.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    href: "#",
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el)))))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('kategoria'),
-    className: "jsx-3312725765"
-  }, "KATEGORIA"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'kategoria' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].kategoria.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    href: "#",
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el)))))), MobileMenu_jsx("li", {
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("a", {
-    onClick: () => setOpenSubmenu('wiecej'),
-    className: "jsx-3312725765"
-  }, "WIECEJ"), MobileMenu_jsx("ul", {
-    style: {
-      display: openSubmenu === 'wiecej' ? 'flex' : 'none'
-    },
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx("img", {
-    src: "./arrowdown.png",
-    onClick: () => setOpenSubmenu(null),
-    className: "jsx-3312725765" + " " + 'takeBack'
-  }), menu["a" /* menu */].wiecej.map(el => MobileMenu_jsx("li", {
-    key: el,
-    className: "jsx-3312725765"
-  }, MobileMenu_jsx(link_default.a, {
-    href: "./[subCategory]",
-    as: `./${el.toLowerCase()}`
-  }, MobileMenu_jsx("a", {
-    href: "#",
-    onClick: () => setMainPage(false),
-    className: "jsx-3312725765"
-  }, el))))))), MobileMenu_jsx(style_default.a, {
-    id: "3312725765"
-  }, [".close_menu.jsx-3312725765{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;height:31px;width:31px;top:26px;right:22px;z-index:55;cursor:pointer;}", ".close_menu.jsx-3312725765 p.jsx-3312725765{height:2px;width:31px;background-color:#000;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:14px;left:0;}", ".close_menu.jsx-3312725765 p.jsx-3312725765:nth-child(2){-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}", ".mobileMenu.jsx-3312725765{position:absolute;top:0;left:0;background-color:#fff;z-index:51;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:100vw;height:100vh;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{display:inline-block;}", "a.jsx-3312725765,span.jsx-3312725765{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;}", "a.jsx-3312725765:hover{background-color:#ff2a2a;color:#fff;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765{display:none;position:absolute;top:0;left:0;height:100vh;width:100vw;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:100;background:#fff;}", ".takeBack.jsx-3312725765{position:absolute;top:0;left:0;width:38px;-webkit-transform:rotate(90deg) translate(7px,-5px);-ms-transform:rotate(90deg) translate(7px,-5px);transform:rotate(90deg) translate(7px,-5px);height:46px;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{width:170px;float:none;display:list-item;position:relative;background-color:#fff;border-bottom:1px solid #000;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765:nth-last-child(1){border-bottom:none;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{cursor:pointer;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{position:relative;top:-60px;left:170px;}"]));
-};
-
-/* harmony default export */ var components_MobileMenu = (MobileMenu);
-// CONCATENATED MODULE: ./components/Layout.js
-
-
-var Layout_jsx = external_react_default.a.createElement;
-
-
-
-
-
-
-const Layout = ({
-  children,
-  mainPage,
-  setMainPage
-}) => {
-  const {
-    0: openPopup,
-    1: setOpenPopup
-  } = Object(external_react_["useState"])(false);
-  const {
-    0: openMobileMenu,
-    1: setOpenMobileMenu
-  } = Object(external_react_["useState"])(false);
-  Object(external_react_["useEffect"])(() => {
-    if (openPopup && openMobileMenu) {
-      document.documentElement.style.overflowY = 'hidden';
-    } else {
-      document.documentElement.style.overflowY = 'visible';
-    }
-  }, [openPopup, openMobileMenu]);
-  return Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'layout'
-  }, Layout_jsx(head_default.a, null, Layout_jsx("title", {
-    className: "jsx-770614668"
-  }, "MOJA ZTRONA")), Layout_jsx(components_MobileMenu, {
-    openMobileMenu: openMobileMenu,
-    setOpenMobileMenu: setOpenMobileMenu,
-    setMainPage: setMainPage
-  }), Layout_jsx("div", {
-    style: {
-      display: openPopup ? 'block' : 'none'
-    },
-    className: "jsx-770614668" + " " + 'popup_help_container'
-  }, Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'popup_help_wrapper'
-  }, Layout_jsx("p", {
-    className: "jsx-770614668"
-  }, "NASZA FIRMA NAWIAZALA KONTAKT AFILIACYJNY Z PONAD 100 INNYCH FIRM. DZIEKI NAM MASZ MOZLIWOSC DOJSCIA DO NAJCIEKAWSZYCH PRODUKTOW WIELU FIRM."), Layout_jsx("p", {
-    onClick: () => setOpenPopup(!openPopup),
-    className: "jsx-770614668" + " " + 'popup_help_close'
-  }, "cloze")), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'popup_help_container_bg'
-  })), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'topline_container'
-  }, Layout_jsx("div", {
-    style: {
-      justifyContent: mainPage ? 'space-between' : 'flex-end'
-    },
-    className: "jsx-770614668" + " " + 'topline_wrapper'
-  }, Layout_jsx("div", {
-    style: {
-      display: mainPage ? 'flex' : 'none'
-    },
-    className: "jsx-770614668" + " " + 'topline_box'
-  }, Layout_jsx("a", {
-    href: "#newsletter",
-    className: "jsx-770614668"
-  }, Layout_jsx("p", {
-    className: "jsx-770614668" + " " + 'newsletter'
-  }, "NEWSLETTER")), Layout_jsx("a", {
-    href: "#allImages",
-    className: "jsx-770614668"
-  }, Layout_jsx("img", {
-    src: "./arrowdown.png",
-    className: "jsx-770614668" + " " + 'arrowdown'
-  }))), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'topline_box'
-  }, Layout_jsx("p", {
-    onClick: () => setOpenPopup(!openPopup),
-    className: "jsx-770614668"
-  }, "POMOC")))), Layout_jsx(components_Navbar, {
-    setOpenMobileMenu: setOpenMobileMenu,
-    openMobileMenu: openMobileMenu,
-    setMainPage: setMainPage
-  }), Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'bottom_container'
-  }, Layout_jsx("div", {
-    className: "jsx-770614668" + " " + 'bottom_box'
-  }, Layout_jsx("p", {
-    className: "jsx-770614668" + " " + 'blinking'
-  }, "MAMY WSZYSTKO CZEGO POTRZEBUJESZ. JESTESMY POLACZENI DO PONAD 100 FIRM"))), children, " ", Layout_jsx(components_Footer, null), Layout_jsx(style_default.a, {
-    id: "770614668"
-  }, ["html{font-family:'Vollkorn',serif !important;line-height:1.8em;-webkit-letter-spacing:0.2rem;-moz-letter-spacing:0.2rem;-ms-letter-spacing:0.2rem;letter-spacing:0.2rem;font-size:14px;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;}", "body{margin:0;padding:0;color:rgb(119,119,119);overflow-x:hidden;}", "ul{list-style:none;margin:0;padding:0;}", "li,a{-webkit-text-decoration:none;text-decoration:none;color:#545454;}", "p{margin:0;}", "button{border:none;background:none;}", "svg{color:#a7a7a7;}", ".btn{cursor:pointer;padding:0.6rem 0.6rem 0.4rem 0.6rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#000;background:#fff;border:1px solid #eaeaeb;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.15);box-shadow:0 1px 4px 0 rgba(0,0,0,0.15);white-space:no-wrap;}", ".layout{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;}", ".popup_help_container{position:absolute;top:0;left:0;z-index:100;display:none;height:100vh;width:100vw;}", ".popup_help_container_bg{height:100%;width:100%;opacity:0.8;background-color:#fff;}", ".popup_help_wrapper{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#000;z-index:1;height:13rem;width:32rem;background-color:#000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;padding:1rem;}", ".popup_help_close{position:absolute;top:0;right:0;}", ".popup_help_wrapper p{color:#fff;}", ".topline_container,.bottom_container{height:2.8rem;background-color:#000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".topline_container .topline_wrapper,.bottom_container .bottom_wrapper{width:95%;margin:0.3rem auto 0.1rem auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".topline_container .topline_wrapper .topline_box{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".topline_container .topline_wrapper .topline_box p{cursor:pointer;}", ".newsletter{border-right:1px solid rgb(119,119,119);padding-right:0.4rem;margin-right:0.4rem;}", ".arrowdown{-webkit-filter:invert(1);filter:invert(1);width:26px;opacity:5;cursor:pointer;-webkit-transform:translateY(4px);-ms-transform:translateY(4px);transform:translateY(4px);}", ".arrowdown{opacity:1;}", ".topline_container .topline_wrapper .topline_box p:hover{color:#fff;}", "@-webkit-keyframes blink{50%{background-color:#95ac00;}}", "@keyframes blink{50%{background-color:#95ac00;}}", ".bottom_container{-webkit-animation:blink 1s ease infinite;animation:blink 1s ease infinite;}", ".bottom_container .bottom_box{width:100%;text-align:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".bottom_container .bottom_box p{color:#fff;-webkit-letter-spacing:0.5rem;-moz-letter-spacing:0.5rem;-ms-letter-spacing:0.5rem;letter-spacing:0.5rem;line-height:1.2rem;padding:.4rem 0 .2rem 0;}", "@media only screen and (max-width:768px){.bottom_container{height:auto;}}"]));
-};
-
-/* harmony default export */ var components_Layout = __webpack_exports__["a"] = (Layout);
 
 /***/ }),
 
@@ -814,6 +373,444 @@ async function dbConnect() {
 
 /***/ }),
 
+/***/ "80PL":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: external "styled-jsx/style"
+var style_ = __webpack_require__("HJQg");
+var style_default = /*#__PURE__*/__webpack_require__.n(style_);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__("YFqc");
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+
+// EXTERNAL MODULE: ./helpers/menu.js
+var menu = __webpack_require__("upzw");
+
+// CONCATENATED MODULE: ./components/desktopmenu/DesktopMenu.js
+
+
+var __jsx = external_react_default.a.createElement;
+
+
+
+const DesktopMenu = ({
+  setMainPage
+}) => {
+  return __jsx("ul", {
+    className: "jsx-2568988605" + " " + 'bigmenu'
+  }, __jsx("li", {
+    className: "jsx-2568988605" + " " + 'nowosc'
+  }, __jsx(link_default.a, {
+    href: "/"
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, "HOME"))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "OSOBA"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].osoba.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "Z OKAZJI"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].okazja.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "KATEGORIA"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].kategoria.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx("li", {
+    className: "jsx-2568988605"
+  }, __jsx("span", {
+    className: "jsx-2568988605"
+  }, "WIECEJ"), __jsx("ul", {
+    className: "jsx-2568988605"
+  }, menu["a" /* menu */].wiecej.map(el => __jsx("li", {
+    key: el,
+    className: "jsx-2568988605"
+  }, __jsx(link_default.a, {
+    onClick: () => setMainPage(false),
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, __jsx("p", {
+    className: "jsx-2568988605"
+  }, el)))))), __jsx(style_default.a, {
+    id: "2568988605"
+  }, [".bigmenu.jsx-2568988605{-webkit-transform:translateX(-3rem);-ms-transform:translateX(-3rem);transform:translateX(-3rem);}", ".nowosc.jsx-2568988605:hover{border-bottom:1px solid red;}", ".bigmenu.jsx-2568988605{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:3.5rem;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:48rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605{display:inline-block;}", "p.jsx-2568988605,span.jsx-2568988605{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}", "span.jsx-2568988605{cursor:default;}", "p.jsx-2568988605:hover{background-color:#ff2a2a;color:#fff;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605{display:none;position:absolute;top:3.5rem;}", ".bigmenu.jsx-2568988605 li.jsx-2568988605:hover>ul.jsx-2568988605{display:inherit;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{width:170px;float:none;display:list-item;position:relative;background-color:#f3f3f3;border-bottom:1px solid #000;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605:nth-last-child(1){border-bottom:none;}", ".bigmenu.jsx-2568988605 ul.jsx-2568988605 ul.jsx-2568988605 li.jsx-2568988605{position:relative;top:-60px;left:170px;}", "li.jsx-2568988605>a.jsx-2568988605:after{content:' +';}", "li.jsx-2568988605>a.jsx-2568988605:only-child.jsx-2568988605:after{content:'';}", "@media only screen and (max-width:1024px){.bigmenu.jsx-2568988605{display:none;}}"]));
+};
+
+/* harmony default export */ var desktopmenu_DesktopMenu = (DesktopMenu);
+// EXTERNAL MODULE: ./components/navbar/Navbar.module.scss
+var Navbar_module = __webpack_require__("wXM4");
+var Navbar_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_module);
+
+// CONCATENATED MODULE: ./components/navbar/Navbar.js
+
+
+var Navbar_jsx = external_react_default.a.createElement;
+
+
+
+
+const Navbar = ({
+  setOpenMobileMenu,
+  openMobileMenu,
+  setMainPage
+}) => {
+  return Navbar_jsx("div", {
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.navbar_container || "")
+  }, Navbar_jsx("div", {
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.navbar_wrapper || "")
+  }, Navbar_jsx("div", {
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.navbar_logo || "")
+  }, Navbar_jsx(link_default.a, {
+    href: "/"
+  }, Navbar_jsx("img", {
+    alt: "logo",
+    src: "./logo.png",
+    className: "jsx-2085888330"
+  }))), Navbar_jsx(desktopmenu_DesktopMenu, {
+    setMainPage: setMainPage
+  }), Navbar_jsx("button", {
+    onClick: () => setOpenMobileMenu(!openMobileMenu),
+    className: "jsx-2085888330" + " " + (Navbar_module_default.a.burger || "")
+  }, "mobile")), Navbar_jsx(style_default.a, {
+    id: "2085888330"
+  }, []));
+};
+
+/* harmony default export */ var navbar_Navbar = (Navbar);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+
+// EXTERNAL MODULE: ./components/footer/Footer.module.scss
+var Footer_module = __webpack_require__("GLbt");
+var Footer_module_default = /*#__PURE__*/__webpack_require__.n(Footer_module);
+
+// CONCATENATED MODULE: ./components/footer/Footer.js
+
+
+var Footer_jsx = external_react_default.a.createElement;
+
+
+const Footer = () => Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_container || "")
+}, Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_wrapper || "")
+}, Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_left || "")
+}, Footer_jsx("img", {
+  src: "./logo.png",
+  alt: "logo",
+  className: "jsx-2085888330"
+}), Footer_jsx("p", {
+  className: "jsx-2085888330"
+}, "2020")), Footer_jsx("div", {
+  className: "jsx-2085888330" + " " + (Footer_module_default.a.footer_right || "")
+}, Footer_jsx("img", {
+  src: "./instagram.png",
+  className: "jsx-2085888330"
+}), Footer_jsx("p", {
+  className: "jsx-2085888330"
+}, "Thank you"))), Footer_jsx(style_default.a, {
+  id: "2085888330"
+}, []));
+
+/* harmony default export */ var footer_Footer = (Footer);
+// CONCATENATED MODULE: ./components/mobilemenu/MobileMenu.js
+
+
+var MobileMenu_jsx = external_react_default.a.createElement;
+
+
+
+
+const MobileMenu = ({
+  openMobileMenu,
+  setOpenMobileMenu,
+  setMainPage
+}) => {
+  const {
+    0: openSubmenu,
+    1: setOpenSubmenu
+  } = Object(external_react_["useState"])(false);
+  const {
+    0: windowSize,
+    1: setWindowSize
+  } = Object(external_react_["useState"])(false);
+  Object(external_react_["useEffect"])(() => {
+    if (windowSize > 1024 || window.innerWidth > 1024) return;
+
+    const onResize = () => {
+      setWindowSize(window.innerWidth);
+
+      if (windowSize > 1024) {
+        setOpenSubmenu(false);
+        setOpenMobileMenu(false);
+      }
+    };
+
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [windowSize]);
+  return MobileMenu_jsx(external_react_default.a.Fragment, null, MobileMenu_jsx("div", {
+    onClick: () => setOpenMobileMenu(!openMobileMenu),
+    style: {
+      display: openSubmenu || !openMobileMenu ? 'none' : 'flex'
+    },
+    className: "jsx-3312725765" + " " + 'close_menu'
+  }, "X"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu || openMobileMenu ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765" + " " + 'mobileMenu'
+  }, MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "/"
+  }, MobileMenu_jsx("a", {
+    className: "jsx-3312725765"
+  }, "NOWOSCI"))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('osoba'),
+    className: "jsx-3312725765"
+  }, "OSOBA"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'osoba' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].osoba.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el)))))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('okazja'),
+    className: "jsx-3312725765"
+  }, "Z OKAZJI"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'okazja' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].okazja.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    href: "#",
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el)))))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('kategoria'),
+    className: "jsx-3312725765"
+  }, "KATEGORIA"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'kategoria' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].kategoria.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    href: "#",
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el)))))), MobileMenu_jsx("li", {
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("a", {
+    onClick: () => setOpenSubmenu('wiecej'),
+    className: "jsx-3312725765"
+  }, "WIECEJ"), MobileMenu_jsx("ul", {
+    style: {
+      display: openSubmenu === 'wiecej' ? 'flex' : 'none'
+    },
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx("img", {
+    src: "./arrowdown.png",
+    onClick: () => setOpenSubmenu(null),
+    className: "jsx-3312725765" + " " + 'takeBack'
+  }), menu["a" /* menu */].wiecej.map(el => MobileMenu_jsx("li", {
+    key: el,
+    className: "jsx-3312725765"
+  }, MobileMenu_jsx(link_default.a, {
+    href: "./[subCategory]",
+    as: `./${el.toLowerCase()}`
+  }, MobileMenu_jsx("a", {
+    href: "#",
+    onClick: () => setMainPage(false),
+    className: "jsx-3312725765"
+  }, el))))))), MobileMenu_jsx(style_default.a, {
+    id: "3312725765"
+  }, [".close_menu.jsx-3312725765{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;height:31px;width:31px;top:26px;right:22px;z-index:55;cursor:pointer;}", ".close_menu.jsx-3312725765 p.jsx-3312725765{height:2px;width:31px;background-color:#000;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:14px;left:0;}", ".close_menu.jsx-3312725765 p.jsx-3312725765:nth-child(2){-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}", ".mobileMenu.jsx-3312725765{position:absolute;top:0;left:0;background-color:#fff;z-index:51;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:1.3rem;-webkit-text-decoration:none;text-decoration:none;font-weight:600;width:100vw;height:100vh;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{display:inline-block;}", "a.jsx-3312725765,span.jsx-3312725765{display:block;padding:0 10px;line-height:3.5rem;-webkit-text-decoration:none;text-decoration:none;}", "a.jsx-3312725765:hover{background-color:#ff2a2a;color:#fff;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765{display:none;position:absolute;top:0;left:0;height:100vh;width:100vw;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:100;background:#fff;}", ".takeBack.jsx-3312725765{position:absolute;top:0;left:0;width:38px;-webkit-transform:rotate(90deg) translate(7px,-5px);-ms-transform:rotate(90deg) translate(7px,-5px);transform:rotate(90deg) translate(7px,-5px);height:46px;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{width:170px;float:none;display:list-item;position:relative;background-color:#fff;border-bottom:1px solid #000;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765:nth-last-child(1){border-bottom:none;}", ".mobileMenu.jsx-3312725765 li.jsx-3312725765{cursor:pointer;}", ".mobileMenu.jsx-3312725765 ul.jsx-3312725765 ul.jsx-3312725765 li.jsx-3312725765{position:relative;top:-60px;left:170px;}"]));
+};
+
+/* harmony default export */ var mobilemenu_MobileMenu = (MobileMenu);
+// EXTERNAL MODULE: ./components/layout/Layout.module.scss
+var Layout_module = __webpack_require__("0Sn8");
+var Layout_module_default = /*#__PURE__*/__webpack_require__.n(Layout_module);
+
+// CONCATENATED MODULE: ./components/layout/Layout.js
+
+
+var Layout_jsx = external_react_default.a.createElement;
+
+
+
+
+
+
+
+const Layout = ({
+  children,
+  mainPage,
+  setMainPage
+}) => {
+  const {
+    0: openPopup,
+    1: setOpenPopup
+  } = Object(external_react_["useState"])(false);
+  const {
+    0: openMobileMenu,
+    1: setOpenMobileMenu
+  } = Object(external_react_["useState"])(false);
+  Object(external_react_["useEffect"])(() => {
+    if (openPopup || openMobileMenu) {
+      document.documentElement.style.overflowY = 'hidden';
+    } else {
+      document.documentElement.style.overflowY = 'visible';
+    }
+  }, [openPopup, openMobileMenu]);
+  return Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.layout || "")
+  }, Layout_jsx(head_default.a, null, Layout_jsx("title", {
+    className: "jsx-2085888330"
+  }, "MOJA ZTRONA")), Layout_jsx(mobilemenu_MobileMenu, {
+    openMobileMenu: openMobileMenu,
+    setOpenMobileMenu: setOpenMobileMenu,
+    setMainPage: setMainPage
+  }), Layout_jsx("div", {
+    style: {
+      display: openPopup ? 'block' : 'none'
+    },
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_container || "")
+  }, Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_wrapper || "")
+  }, Layout_jsx("p", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_info || "")
+  }, "NASZA FIRMA NAWIAZALA KONTAKT AFILIACYJNY Z PONAD 100 INNYCH FIRM. DZIEKI NAM MASZ MOZLIWOSC DOJSCIA DO NAJCIEKAWSZYCH PRODUKTOW WIELU FIRM."), Layout_jsx("p", {
+    onClick: () => setOpenPopup(!openPopup),
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_close || "")
+  }, "cloze")), Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.popup_help_container_bg || "")
+  })), Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.topline_container || "")
+  }, Layout_jsx("div", {
+    style: {
+      justifyContent: mainPage ? 'space-between' : 'flex-end'
+    },
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.topline_wrapper || "")
+  }, Layout_jsx("div", {
+    style: {
+      display: mainPage ? 'flex' : 'none'
+    },
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.topline_box || "")
+  }, Layout_jsx("a", {
+    href: "#newsletter",
+    className: "jsx-2085888330"
+  }, Layout_jsx("p", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.newsletter || "")
+  }, "NEWSLETTER")), Layout_jsx("a", {
+    href: "#allImages",
+    className: "jsx-2085888330"
+  }, Layout_jsx("img", {
+    src: "./arrowdown.png",
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.arrowdown || "")
+  }))), Layout_jsx("div", {
+    onClick: () => setOpenPopup(!openPopup),
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.pomocBtn || "")
+  }, "POMOC"))), Layout_jsx(navbar_Navbar, {
+    setOpenMobileMenu: setOpenMobileMenu,
+    openMobileMenu: openMobileMenu,
+    setMainPage: setMainPage
+  }), Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.bottomline_container || "")
+  }, Layout_jsx("div", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.bottomline_wrapper || "")
+  }, Layout_jsx("p", {
+    className: "jsx-2085888330" + " " + (Layout_module_default.a.blinking || "")
+  }, "MAMY WSZYSTKO CZEGO POTRZEBUJESZ. JESTESMY POLACZENI DO PONAD 100 FIRM"))), children, " ", Layout_jsx(footer_Footer, null), Layout_jsx(style_default.a, {
+    id: "2085888330"
+  }, []));
+};
+
+/* harmony default export */ var layout_Layout = __webpack_exports__["a"] = (Layout);
+
+/***/ }),
+
 /***/ "8xkj":
 /***/ (function(module, exports) {
 
@@ -866,10 +863,123 @@ module.exports = require("mongoose");
 
 /***/ }),
 
+/***/ "GLbt":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"footer_container": "Footer_footer_container__2g4O-",
+	"footer_wrapper": "Footer_footer_wrapper__1BhbG",
+	"footer_left": "Footer_footer_left__3k1kN",
+	"footer_right": "Footer_footer_right__3Nywy",
+	"footer": "Footer_footer__17mGM"
+};
+
+
+/***/ }),
+
 /***/ "HJQg":
 /***/ (function(module, exports) {
 
 module.exports = require("styled-jsx/style");
+
+/***/ }),
+
+/***/ "IB8S":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"inbetweenOne_container": "InbetweenOne_inbetweenOne_container__1IGtT",
+	"inbetweenOne_wrapper": "InbetweenOne_inbetweenOne_wrapper__3VZ3h"
+};
+
+
+/***/ }),
+
+/***/ "IObC":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("HJQg");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Card_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("/LF6");
+/* harmony import */ var _Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Card_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+const Card = ({
+  id,
+  name,
+  description,
+  price,
+  category,
+  image,
+  createdAt
+}) => {
+  return __jsx("div", {
+    key: name,
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.blockBig_container || "")
+  }, __jsx("a", {
+    href: "#!",
+    onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      }
+    }),
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.blockBig_image_container || "")
+  }, __jsx("span", {
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.labelBig || "")
+  }, "EXTRA"), __jsx("img", {
+    src: image,
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.imageBig || "")
+  })), __jsx("p", {
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.titleBig || "")
+  }, name), __jsx("p", {
+    className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.priceBig || "")
+  }, price, "PLN"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2085888330"
+  }, []));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Card);
+
+/***/ }),
+
+/***/ "NzbH":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"empty_padding_newsletter": "Newsletter_empty_padding_newsletter__1cz-s",
+	"newsletter_container": "Newsletter_newsletter_container__gIHk5",
+	"newsletter_wrapper": "Newsletter_newsletter_wrapper__3sEMR",
+	"newsletter_component": "Newsletter_newsletter_component__2fGrr",
+	"newsletter_signinbox": "Newsletter_newsletter_signinbox__PXMdH",
+	"newsletter_btn": "Newsletter_newsletter_btn__3XlFu"
+};
+
+
+/***/ }),
+
+/***/ "OREE":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"homeNews_container": "HomeNews_homeNews_container__gOpIK",
+	"homeNews_title": "HomeNews_homeNews_title__3zxOD",
+	"homeNews_title_left": "HomeNews_homeNews_title_left__Lcqn_",
+	"homeNews_wrapper": "HomeNews_homeNews_wrapper__3lYjM",
+	"homeNews_buttons": "HomeNews_homeNews_buttons__2c1ec",
+	"homeNews_box": "HomeNews_homeNews_box__1WTYs"
+};
+
 
 /***/ }),
 
@@ -898,17 +1008,22 @@ var style_default = /*#__PURE__*/__webpack_require__.n(style_);
 var external_react_ = __webpack_require__("cDcd");
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: ./components/Layout.js + 4 modules
-var Layout = __webpack_require__("5Yp1");
+// EXTERNAL MODULE: ./components/layout/Layout.js + 4 modules
+var Layout = __webpack_require__("80PL");
 
 // EXTERNAL MODULE: external "isomorphic-unfetch"
 var external_isomorphic_unfetch_ = __webpack_require__("0bYB");
 var external_isomorphic_unfetch_default = /*#__PURE__*/__webpack_require__.n(external_isomorphic_unfetch_);
 
-// CONCATENATED MODULE: ./components/SmallCard.js
+// EXTERNAL MODULE: ./components/smallcard/SmallCard.module.scss
+var SmallCard_module = __webpack_require__("z9a/");
+var SmallCard_module_default = /*#__PURE__*/__webpack_require__.n(SmallCard_module);
+
+// CONCATENATED MODULE: ./components/smallcard/SmallCard.js
 
 
 var __jsx = external_react_default.a.createElement;
+
 
 const SmallCard = ({
   id,
@@ -921,9 +1036,9 @@ const SmallCard = ({
 }) => {
   return __jsx("div", {
     key: name,
-    className: "jsx-3798694978" + " " + 'blockSmall'
+    className: "jsx-2170358054" + " " + (SmallCard_module_default.a.blockSmall_container || "")
   }, __jsx("p", {
-    className: "jsx-3798694978" + " " + 'titleSmall'
+    className: "jsx-2170358054" + " " + (SmallCard_module_default.a.titleSmall || "")
   }, name), __jsx("a", {
     href: "#!",
     onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
@@ -932,20 +1047,25 @@ const SmallCard = ({
         'Content-Type': 'application/json;charset=utf-8'
       }
     }),
-    className: "jsx-3798694978"
+    className: "jsx-2170358054"
   }, __jsx("img", {
     src: image,
-    className: "jsx-3798694978" + " " + 'image'
+    className: "jsx-2170358054" + " " + (SmallCard_module_default.a.imageSmall || "")
   })), __jsx(style_default.a, {
-    id: "3798694978"
-  }, [".blockSmall.jsx-3798694978{position:relative;cursor:pointer;min-height:10rem;max-height:17rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".blockSmall.jsx-3798694978 a.jsx-3798694978{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".blockSmall.jsx-3798694978 a.jsx-3798694978 .image.jsx-3798694978{max-width:100%;-webkit-transition:0.2s;transition:0.2s;border-radius:0.2rem;}", ".blockSmall.jsx-3798694978:hover .image.jsx-3798694978{-webkit-transform:translate(-0.5rem,-0.5rem) rotate(-3deg);-ms-transform:translate(-0.5rem,-0.5rem) rotate(-3deg);transform:translate(-0.5rem,-0.5rem) rotate(-3deg);}", ".titleSmall.jsx-3798694978{-webkit-transition:0.2s;transition:0.2s;position:absolute;bottom:1rem;right:12%;font-weight:600;min-width:8rem;z-index:-1;}", ".blockSmall.jsx-3798694978:hover .titleSmall.jsx-3798694978{bottom:-1.1rem;right:0;color:black;}"]));
+    id: "2170358054"
+  }, []));
 };
 
-/* harmony default export */ var components_SmallCard = (SmallCard);
-// CONCATENATED MODULE: ./components/LatestNews.js
+/* harmony default export */ var smallcard_SmallCard = (SmallCard);
+// EXTERNAL MODULE: ./components/latestnews/LatestNews.module.scss
+var LatestNews_module = __webpack_require__("eva/");
+var LatestNews_module_default = /*#__PURE__*/__webpack_require__.n(LatestNews_module);
+
+// CONCATENATED MODULE: ./components/latestnews/LatestNews.js
 
 
 var LatestNews_jsx = external_react_default.a.createElement;
+
 
 
 const LatestNews = ({
@@ -953,20 +1073,20 @@ const LatestNews = ({
   latest
 }) => {
   return LatestNews_jsx("div", {
-    className: "jsx-3318252457" + " " + 'latestNews_container'
+    className: "jsx-2085888330" + " " + (LatestNews_module_default.a.latestNews_container || "")
   }, LatestNews_jsx("div", {
-    className: "jsx-3318252457" + " " + 'latestNews_title'
+    className: "jsx-2085888330" + " " + (LatestNews_module_default.a.latestNews_title || "")
   }, LatestNews_jsx("p", {
-    className: "jsx-3318252457" + " " + 'latestNews_title-left'
+    className: "jsx-2085888330" + " " + (LatestNews_module_default.a.latestNews_title_left || "")
   }, "Najnowsze"), LatestNews_jsx("a", {
     href: "#allImages",
     onClick: () => latest(),
-    className: "jsx-3318252457" + " " + 'latestNews_title-right'
+    className: "jsx-2085888330" + " " + (LatestNews_module_default.a.latestNews_title_right || "")
   }, LatestNews_jsx("p", {
-    className: "jsx-3318252457"
+    className: "jsx-2085888330"
   }, "Zobacz"))), data ? LatestNews_jsx("div", {
-    className: "jsx-3318252457" + " " + 'latestNews'
-  }, data.map(el => LatestNews_jsx(components_SmallCard, {
+    className: "jsx-2085888330" + " " + (LatestNews_module_default.a.latestNews_wrapper || "")
+  }, data.map(el => LatestNews_jsx(smallcard_SmallCard, {
     id: el._id,
     name: el.name,
     description: el.description,
@@ -976,17 +1096,21 @@ const LatestNews = ({
     createdAt: el.createdAt,
     key: el.name
   }))) : LatestNews_jsx("p", {
-    className: "jsx-3318252457"
+    className: "jsx-2085888330"
   }, "loading"), LatestNews_jsx(style_default.a, {
-    id: "3318252457"
-  }, [".latestNews_container.jsx-3318252457{width:95%;margin:3rem auto 0 auto;}", ".latestNews_title.jsx-3318252457{font-size:1.3rem;color:#000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:baseline;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;}", ".latestNews_title-left.jsx-3318252457{font-size:1.8rem;}", ".latestNews_title-right.jsx-3318252457{cursor:pointer;}", ".latestNews_title-right.jsx-3318252457:hover{opacity:0.75;}", ".latestNews.jsx-3318252457{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));grid-gap:1.3rem;margin-top:1rem;}", "@media only screen and (max-width:768px){.latestNews_title-right.jsx-3318252457{text-align:center;}}", "@media only screen and (max-width:425px){.latestNews_container.jsx-3318252457{margin:3rem auto 0 auto;}}"]));
+    id: "2085888330"
+  }, []));
 };
 
-/* harmony default export */ var components_LatestNews = (LatestNews);
-// EXTERNAL MODULE: ./components/Card.js
-var Card = __webpack_require__("3Mv1");
+/* harmony default export */ var latestnews_LatestNews = (LatestNews);
+// EXTERNAL MODULE: ./components/homenews/HomeNews.module.scss
+var HomeNews_module = __webpack_require__("OREE");
+var HomeNews_module_default = /*#__PURE__*/__webpack_require__.n(HomeNews_module);
 
-// CONCATENATED MODULE: ./components/HomeNews.js
+// EXTERNAL MODULE: ./components/card/Card.js
+var Card = __webpack_require__("IObC");
+
+// CONCATENATED MODULE: ./components/homenews/HomeNews.js
 
 
 var HomeNews_jsx = external_react_default.a.createElement;
@@ -1002,29 +1126,29 @@ const HomeNews = ({
 }) => {
   return HomeNews_jsx("div", {
     id: "allImages",
-    className: "jsx-3437942587" + " " + 'homeNews_container'
+    className: "jsx-2085888330" + " " + (HomeNews_module_default.a.homeNews_container || "")
   }, HomeNews_jsx("div", {
-    className: "jsx-3437942587" + " " + 'homeNews_title'
+    className: "jsx-2085888330" + " " + (HomeNews_module_default.a.homeNews_title || "")
   }, HomeNews_jsx("p", {
-    className: "jsx-3437942587" + " " + 'homeNews_title-left'
+    className: "jsx-2085888330" + " " + (HomeNews_module_default.a.homeNews_title_left || "")
   }, "Wejdz na wyzszy poziom zakupow")), data ? HomeNews_jsx("div", {
-    className: "jsx-3437942587" + " " + 'homeNews'
+    className: "jsx-2085888330" + " " + (HomeNews_module_default.a.homeNews_wrapper || "")
   }, HomeNews_jsx("div", {
-    className: "jsx-3437942587" + " " + 'homeNews_buttons'
+    className: "jsx-2085888330" + " " + (HomeNews_module_default.a.homeNews_buttons || "")
   }, HomeNews_jsx("p", {
     onClick: () => latest(),
-    className: "jsx-3437942587" + " " + 'btn'
+    className: "jsx-2085888330" + " " + 'btn'
   }, "Najnowsze"), HomeNews_jsx("p", {
     onClick: () => popular(),
-    className: "jsx-3437942587" + " " + 'btn'
+    className: "jsx-2085888330" + " " + 'btn'
   }, "Popularne"), HomeNews_jsx("p", {
     onClick: () => under(),
-    className: "jsx-3437942587" + " " + 'btn'
+    className: "jsx-2085888330" + " " + 'btn'
   }, "- 10PLN"), HomeNews_jsx("p", {
     onClick: () => random(),
-    className: "jsx-3437942587" + " " + 'btn'
+    className: "jsx-2085888330" + " " + 'btn'
   }, "Random")), HomeNews_jsx("div", {
-    className: "jsx-3437942587" + " " + 'homeNews_box'
+    className: "jsx-2085888330" + " " + (HomeNews_module_default.a.homeNews_box || "")
   }, data.map(el => HomeNews_jsx(Card["a" /* default */], {
     id: el._id,
     name: el.name,
@@ -1035,14 +1159,14 @@ const HomeNews = ({
     createdAt: el.createdAt,
     key: el.name
   })))) : HomeNews_jsx("p", {
-    className: "jsx-3437942587"
+    className: "jsx-2085888330"
   }, "loading"), HomeNews_jsx(style_default.a, {
-    id: "3437942587"
-  }, [".homeNews_container.jsx-3437942587{width:95%;margin:0rem auto;padding-top:7rem;}", ".homeNews_title.jsx-3437942587{font-size:1.3rem;color:#000;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}", ".homeNews_title-left.jsx-3437942587{font-size:1.8rem;}", ".homeNews.jsx-3437942587{margin-top:1rem;}", ".homeNews_buttons.jsx-3437942587{white-space:nowrap;grid-template-columns:repeat(4,minmax(6.9rem,14rem));display:grid;font-size:1.3rem;margin-bottom:4rem;}", ".homeNews_buttons.jsx-3437942587 p.jsx-3437942587{margin-right:1rem;position:relative;text-align:center;}", ".homeNews_buttons.jsx-3437942587 p.jsx-3437942587::before{content:'';position:absolute;bottom:0;left:0;height:2px;width:0%;-webkit-transition:0.2s;transition:0.2s;background-color:#484848;}", ".homeNews_buttons.jsx-3437942587 p.jsx-3437942587:hover{color:#484848;}", ".homeNews_buttons.jsx-3437942587 p.jsx-3437942587:hover.jsx-3437942587::before{margin-right:1rem;width:100%;}", ".homeNews_buttons.jsx-3437942587 p.jsx-3437942587:active{-webkit-transform:translateY(0.3rem);-ms-transform:translateY(0.3rem);transform:translateY(0.3rem);}", ".homeNews_box.jsx-3437942587{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.9rem,24.4rem));grid-auto-rows:25.14rem;grid-gap:1.3rem;grid-row-gap:4rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:2rem;}", "@media only screen and (max-width:768px){.homeNews_buttons.jsx-3437942587{white-space:nowrap;grid-template-columns:repeat(2,minmax(6.9rem,1fr));row-gap:1rem;-webkit-column-gap:1rem;column-gap:1rem;}.homeNews_buttons.jsx-3437942587 p.jsx-3437942587{margin-right:0rem;}}"]));
+    id: "2085888330"
+  }, []));
 };
 
-/* harmony default export */ var components_HomeNews = (HomeNews);
-// CONCATENATED MODULE: ./components/AdminPanel.js
+/* harmony default export */ var homenews_HomeNews = (HomeNews);
+// CONCATENATED MODULE: ./components/adminpanel/AdminPanel.js
 
 var AdminPanel_jsx = external_react_default.a.createElement;
 
@@ -1139,52 +1263,67 @@ const AdminPanel = () => {
   }, "submit"));
 };
 
-/* harmony default export */ var components_AdminPanel = (AdminPanel);
-// CONCATENATED MODULE: ./components/InbetweenOne.js
+/* harmony default export */ var adminpanel_AdminPanel = (AdminPanel);
+// EXTERNAL MODULE: ./components/inbetweenone/InbetweenOne.module.scss
+var InbetweenOne_module = __webpack_require__("IB8S");
+var InbetweenOne_module_default = /*#__PURE__*/__webpack_require__.n(InbetweenOne_module);
+
+// CONCATENATED MODULE: ./components/inbetweenone/InbetweenOne.js
 
 
 var InbetweenOne_jsx = external_react_default.a.createElement;
 
+
 const InbetweenOne = () => {
   return InbetweenOne_jsx("div", {
-    className: "jsx-3175859530" + " " + 'inbetweenOne_container'
+    className: "jsx-2085888330" + " " + (InbetweenOne_module_default.a.inbetweenOne_container || "")
   }, InbetweenOne_jsx("div", {
-    className: "jsx-3175859530" + " " + 'inbetweenOne_wrapper'
+    className: "jsx-2085888330" + " " + (InbetweenOne_module_default.a.inbetweenOne_wrapper || "")
   }, InbetweenOne_jsx("span", {
-    className: "jsx-3175859530"
+    className: "jsx-2085888330"
   }, "The year 2020"), InbetweenOne_jsx("p", {
-    className: "jsx-3175859530"
+    className: "jsx-2085888330"
   }, "WSZYSTKO CZEGO DUSZA ZAPRAGNIE JEST W JEDNYM MIEJSCU")), InbetweenOne_jsx(style_default.a, {
-    id: "3175859530"
-  }, [".inbetweenOne_container.jsx-3175859530{margin:8rem 0rem 0rem 0rem;}", ".inbetweenOne_wrapper.jsx-3175859530{width:50%;margin:0 auto;text-align:center;position:relative;background:#fbfbfb;border-radius:.3rem;padding:2rem 3rem;}", ".inbetweenOne_wrapper.jsx-3175859530 p.jsx-3175859530{color:#000;font-size:5rem;line-height:5rem;}"]));
+    id: "2085888330"
+  }, []));
 };
 
-/* harmony default export */ var components_InbetweenOne = (InbetweenOne);
-// CONCATENATED MODULE: ./components/Newsletter.js
+/* harmony default export */ var inbetweenone_InbetweenOne = (InbetweenOne);
+// EXTERNAL MODULE: ./components/newsletter/Newsletter.module.scss
+var Newsletter_module = __webpack_require__("NzbH");
+var Newsletter_module_default = /*#__PURE__*/__webpack_require__.n(Newsletter_module);
+
+// CONCATENATED MODULE: ./components/newsletter/Newsletter.js
 
 
 var Newsletter_jsx = external_react_default.a.createElement;
 
+
 const Newsletter = () => {
   return Newsletter_jsx(external_react_default.a.Fragment, null, Newsletter_jsx("div", {
     id: "newsletter",
-    className: "jsx-1104043810" + " " + 'empty_padding_newsletter'
+    className: "jsx-2085888330" + " " + (Newsletter_module_default.a.empty_padding_newsletter || "")
   }), Newsletter_jsx("div", {
-    className: "jsx-1104043810" + " " + 'newsletter_container'
+    className: "jsx-2085888330" + " " + (Newsletter_module_default.a.newsletter_container || "")
   }, Newsletter_jsx("div", {
-    className: "jsx-1104043810" + " " + 'newsletter_wrapper'
+    className: "jsx-2085888330" + " " + (Newsletter_module_default.a.newsletter_wrapper || "")
   }, Newsletter_jsx("p", {
-    className: "jsx-1104043810" + " " + 'newsletter_component'
-  }, "Twoj newsletter - ", Newsletter_jsx("br", {
-    className: "jsx-1104043810"
-  }), " najnowsze promocje, oferty i znizki"), Newsletter_jsx("p", {
-    className: "jsx-1104043810" + " " + 'btn newsletter_btn'
-  }, "Zapisz sie"))), Newsletter_jsx(style_default.a, {
-    id: "1104043810"
-  }, [".empty_padding_newsletter.jsx-1104043810{height:8rem;}", ".newsletter_container.jsx-1104043810{background-color:#95ac00;height:12rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".newsletter_wrapper.jsx-1104043810{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:61%;margin:0 auto;}", ".newsletter_component.jsx-1104043810{font-size:3rem;width:36rem;line-height:2.3rem;color:#000;font-variant-caps:all-petite-caps;}", ".newsletter_btn.jsx-1104043810{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;font-size:1.6rem;padding:0.7rem 1.4rem;white-space:nowrap;}", ".newsletter_btn.jsx-1104043810:hover{color:#fff;background-color:#000;}", "@media only screen and (max-width:1024px){.newsletter_wrapper.jsx-1104043810{width:80%;}}", "@media only screen and (max-width:768px){.newsletter_container.jsx-1104043810{height:auto;padding:1rem 0;}.newsletter_component.jsx-1104043810{text-align:center;margin-bottom:1rem;width:auto;font-size:2rem;line-height:1.8rem;}.newsletter_wrapper.jsx-1104043810{width:90%;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}"]));
+    className: "jsx-2085888330" + " " + (Newsletter_module_default.a.newsletter_component || "")
+  }, "Zostaw suba! ", Newsletter_jsx("br", {
+    className: "jsx-2085888330"
+  }), " badz na biezaco z nowosciami"), Newsletter_jsx("div", {
+    className: "jsx-2085888330" + " " + (Newsletter_module_default.a.newsletter_signinbox || "")
+  }, Newsletter_jsx("input", {
+    type: "text",
+    className: "jsx-2085888330"
+  }), Newsletter_jsx("p", {
+    className: "jsx-2085888330" + " " + (Newsletter_module_default.a.newsletter_btn || "")
+  }, "Zapisz sie")))), Newsletter_jsx(style_default.a, {
+    id: "2085888330"
+  }, []));
 };
 
-/* harmony default export */ var components_Newsletter = (Newsletter);
+/* harmony default export */ var newsletter_Newsletter = (Newsletter);
 // EXTERNAL MODULE: external "keen-slider/react"
 var react_ = __webpack_require__("ogra");
 
@@ -1230,7 +1369,7 @@ const Index = props => {
   const {
     0: currentPage,
     1: setCurrentPage
-  } = Object(external_react_["useState"])(2); // current page number
+  } = Object(external_react_["useState"])(8); // current page number
 
   const {
     0: mainPage,
@@ -1283,7 +1422,7 @@ const Index = props => {
 
   const popular = () => {
     let oldData = [...homeData];
-    let newData = oldData.filter(el => el.popularity >= 2);
+    let newData = oldData.filter(el => el.popularity >= 10);
     setBtnChangedData(newData);
     setCurrentBtnClicked('popular');
   };
@@ -1326,14 +1465,14 @@ const Index = props => {
     const {
       data
     } = await result.json();
-    setCurrentPage(p => p + 1);
+    setCurrentPage(p => p + 4);
+    setBtnChangedData([]); // Reset and come back to homeData
+
     setHomeData(data); // Add to homeData
 
     if (currentBtnClicked === 'latest') latest();
     if (currentBtnClicked === 'popular') popular();
-    if (currentBtnClicked === 'under') under();
-    if (currentBtnClicked === 'random') random();
-    setBtnChangedData([]); // Reset and come back to homeData
+    if (currentBtnClicked === 'under') under(); // if (currentBtnClicked === 'random') random();
   };
 
   return pages_jsx(Layout["a" /* default */], {
@@ -1380,10 +1519,10 @@ const Index = props => {
     className: "jsx-931979104"
   }), pages_jsx("p", {
     className: "jsx-931979104" + " " + 'slider-text slider-text-4'
-  }, "WASZE CENTRUM")))), pages_jsx(components_LatestNews, {
+  }, "WASZE CENTRUM")))), pages_jsx(latestnews_LatestNews, {
     data: props.latestNewsData,
     latest: latest
-  }), pages_jsx(components_Newsletter, null), pages_jsx(components_HomeNews, {
+  }), pages_jsx(newsletter_Newsletter, null), pages_jsx(homenews_HomeNews, {
     data: btnChangedData.length === 0 ? homeData : btnChangedData,
     latest: latest,
     popular: popular,
@@ -1399,21 +1538,24 @@ const Index = props => {
   }, [".slider-configuration.jsx-931979104{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:2rem 0;}", ".slider-box.jsx-931979104{position:relative;}", ".slider-text.jsx-931979104{position:absolute;font-size:3rem;width:34rem;line-height:3rem;text-shadow:1px 1px 0px rgba(0,0,0,0.2);padding:1rem 2rem;background-color:#ffc500;color:#fff;}", ".slider-text-1.jsx-931979104{bottom:30rem;left:-5rem;white-space:nowrap;}", ".slider-text-2.jsx-931979104{bottom:29rem;right:-1rem;}", ".slider-text-3.jsx-931979104{bottom:3rem;left:-10rem;}", ".slider-text-4.jsx-931979104{bottom:2rem;right:-3rem;}", ".star.jsx-931979104{position:absolute;top:-54px;left:-57px;width:9%;-webkit-transform:rotate(-3deg);-ms-transform:rotate(-3deg);transform:rotate(-3deg);}", ".moreBtnDiv.jsx-931979104{text-align:center;margin:3rem 0;}", ".moreBtnDiv.jsx-931979104 button.jsx-931979104{padding:1rem 3rem;border:none;outline:none;}", ".moreBtnDiv.jsx-931979104 button.jsx-931979104:hover{background-color:#ff2a2a;color:#fff;}", ".moreBtnDiv.jsx-931979104 button.jsx-931979104:active{-webkit-transform:translateY(0.3rem);-ms-transform:translateY(0.3rem);transform:translateY(0.3rem);}", "@media only screen and (max-width:1024px){.slider-text-1.jsx-931979104{left:-1rem;}.slider-text-2.jsx-931979104{right:-3rem;}.slider-text-3.jsx-931979104{left:-1rem;}}", "@media only screen and (max-width:768px){.slider-box.jsx-931979104{position:relative;width:95%;margin:0 auto;}.slider-box.jsx-931979104 img.jsx-931979104{width:100%;}.slider-box.jsx-931979104 p.jsx-931979104{font-size:1.8rem;width:100%;padding:0.4rem 0;text-align:center;bottom:0;left:0;}}", "@media only screen and (max-width:510px){.slider-box.jsx-931979104 p.jsx-931979104{font-size:1.3rem;padding:.2rem 0;line-height:inherit;}}"]));
 };
 
-const getStaticProps = async () => {
+const getStaticProps = async ctx => {
+  // https://nextjs.org/docs/basic-features/data-fetching#write-server-side-code-directly
   Object(dbConnection["a" /* default */])();
   const items = await itemModel_default.a.find();
-  let onlyFive = items.slice(0, 5); // const latestNewsResult = await fetch('http://localhost:3000/api/all');
+  let onlyFive = items.slice(0, 9); // const latestNewsResult = await fetch('http://localhost:3000/api/all');
   // const latestNewsData = await latestNewsResult.json();
+  // let itemsPerPage = await Item.find();
 
-  let itemsPerPage = await itemModel_default.a.find();
-  let n = itemsPerPage.slice(0, 1); // const homeNewsResult = await fetch(`http://localhost:3000/api/items/1`);
+  let n = items.slice(0, 4); // const homeNewsResult = await fetch(`http://localhost:3000/api/items/1`);
   // const homeNewsData = await homeNewsResult.json();
 
   return {
     props: {
       latestNewsData: JSON.parse(JSON.stringify(onlyFive)),
       homeNewsData: JSON.parse(JSON.stringify(n))
-    }
+    },
+    revalidate: 1 //  static content can also be dynamic (ale jakby za 3 razem?). https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation  
+
   };
 };
 /* harmony default export */ var pages = __webpack_exports__["default"] = (Index);
@@ -2668,6 +2810,22 @@ Router.events = (0, _mitt.default)();
 
 /***/ }),
 
+/***/ "eva/":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"latestNews_container": "LatestNews_latestNews_container__3OCKx",
+	"latestNews_title": "LatestNews_latestNews_title__2Xtcj",
+	"latestNews_title_left": "LatestNews_latestNews_title_left__2yE_2",
+	"latestNews_title_right": "LatestNews_latestNews_title_right__1MlzG",
+	"latestNews_wrapper": "LatestNews_latestNews_wrapper__2QLUj",
+	"latestNews_title-right": "LatestNews_latestNews_title-right__3OV02"
+};
+
+
+/***/ }),
+
 /***/ "g/15":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3083,10 +3241,37 @@ const pathMenu = ['mezczyzna', 'kobieta'];
 
 /***/ }),
 
+/***/ "wXM4":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"navbar_container": "Navbar_navbar_container__2Fopq",
+	"navbar_wrapper": "Navbar_navbar_wrapper__3JnG9",
+	"navbar_logo": "Navbar_navbar_logo__2r8W5",
+	"burger": "Navbar_burger__1pUWg"
+};
+
+
+/***/ }),
+
 /***/ "xnum":
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "z9a/":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"blockSmall_container": "SmallCard_blockSmall_container__ouW6-",
+	"titleSmall": "SmallCard_titleSmall__2YMVT",
+	"imageSmall": "SmallCard_imageSmall__1IHKn"
+};
+
 
 /***/ })
 
