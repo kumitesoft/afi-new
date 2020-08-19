@@ -1,4 +1,19 @@
 import mongoose from 'mongoose';
+const LRUCache = require('lru-cache');
+
+// export const ssrCache = new LRUCache({
+//   max: 100,
+//   maxAge: 1000 * 60, // 1hour
+// });
+
+// export async function checkIfCached(req, res, pagePath, queryParams) {
+//   if (ssrCache.has(pagePath)) {
+//     let result = ssrCache.get(pagePath);
+//     return result;
+//   } else {
+//     return false;
+//   }
+// }
 
 const connection = {};
 

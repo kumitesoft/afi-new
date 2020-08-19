@@ -108,6 +108,21 @@ module.exports = __webpack_require__("K0FZ");
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("FiKB");
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
 
+
+const LRUCache = __webpack_require__("iDQ1"); // export const ssrCache = new LRUCache({
+//   max: 100,
+//   maxAge: 1000 * 60, // 1hour
+// });
+// export async function checkIfCached(req, res, pagePath, queryParams) {
+//   if (ssrCache.has(pagePath)) {
+//     let result = ssrCache.get(pagePath);
+//     return result;
+//   } else {
+//     return false;
+//   }
+// }
+
+
 const connection = {};
 
 async function dbConnect() {
@@ -221,6 +236,13 @@ Object(_utils_dbConnection__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])();
       break;
   }
 });
+
+/***/ }),
+
+/***/ "iDQ1":
+/***/ (function(module, exports) {
+
+module.exports = require("lru-cache");
 
 /***/ })
 

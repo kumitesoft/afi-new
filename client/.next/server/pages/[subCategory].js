@@ -256,6 +256,13 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
+/***/ "4Q3z":
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "6D7l":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -342,6 +349,21 @@ function formatUrl(urlObj) {
 "use strict";
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("FiKB");
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const LRUCache = __webpack_require__("iDQ1"); // export const ssrCache = new LRUCache({
+//   max: 100,
+//   maxAge: 1000 * 60, // 1hour
+// });
+// export async function checkIfCached(req, res, pagePath, queryParams) {
+//   if (ssrCache.has(pagePath)) {
+//     let result = ssrCache.get(pagePath);
+//     return result;
+//   } else {
+//     return false;
+//   }
+// }
+
 
 const connection = {};
 
@@ -917,6 +939,9 @@ var dbConnection = __webpack_require__("7YMP");
 // EXTERNAL MODULE: ./helpers/menu.js
 var menu = __webpack_require__("upzw");
 
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__("4Q3z");
+
 // CONCATENATED MODULE: ./pages/[subCategory].js
 
 
@@ -929,11 +954,12 @@ var _subCategory_jsx = external_react_default.a.createElement;
 
 
 
+
 const Category = ({
   categoryData
 }) => {
   const title = titleFn(categoryData[0].subCategory);
-  console.log(categoryData, 'categoryData');
+  const router = Object(router_["useRouter"])();
   return _subCategory_jsx(Layout["a" /* default */], null, _subCategory_jsx("div", {
     className: "jsx-283917303" + " " + 'category_container'
   }, _subCategory_jsx("div", {
@@ -950,7 +976,9 @@ const Category = ({
     className: "jsx-283917303"
   }, "Ponad 100 roznych sklepow")), _subCategory_jsx("div", {
     className: "jsx-283917303" + " " + 'category_wrapper'
-  }, categoryData.map(el => _subCategory_jsx(Card["a" /* default */], {
+  }, router.callback ? _subCategory_jsx("p", {
+    className: "jsx-283917303"
+  }, "Loading...") : categoryData.map(el => _subCategory_jsx(Card["a" /* default */], {
     id: el._id,
     name: el.name,
     description: el.description,
@@ -988,7 +1016,6 @@ const getStaticPaths = async () => {
       subCategory: el
     }
   }));
-  console.log(paths, 'paths');
   return {
     // paths: [
     //   {
@@ -1102,7 +1129,7 @@ const Card = ({
   }, __jsx("a", {
     href: "#!",
     onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
-      method: 'PUT',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       }
@@ -1112,6 +1139,7 @@ const Card = ({
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.labelBig || "")
   }, "EXTRA"), __jsx("img", {
     src: image,
+    loading: "lazy",
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.imageBig || "")
   })), __jsx("p", {
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.titleBig || "")
@@ -2574,6 +2602,13 @@ function parseRelativeUrl(url, base) {
     href: href.slice(DUMMY_BASE.origin.length)
   };
 }
+
+/***/ }),
+
+/***/ "iDQ1":
+/***/ (function(module, exports) {
+
+module.exports = require("lru-cache");
 
 /***/ }),
 

@@ -9,6 +9,8 @@ import { useKeenSlider } from 'keen-slider/react';
 import Item from '../models/itemModel';
 import dbConnect from '../utils/dbConnection';
 import { useState, useEffect } from 'react';
+// import { ssrCache, checkIfCached } from '../utils/dbConnection'
+// import useSWR, { mutate, trigger } from 'swr';
 
 const Index = (props) => {
   const [homeData, setHomeData] = useState([]); // data to which I add more n more elements
@@ -53,7 +55,12 @@ const Index = (props) => {
   // end of slider configuration ***
 
   useEffect(() => {
-    setHomeData(props.homeNewsData);
+    if(JSON.parse(localStorage.getItem('localData')) && JSON.parse(localStorage.getItem('localPage'))){
+      setHomeData(JSON.parse(localStorage.getItem('localData')))
+      setCurrentPage(JSON.parse(localStorage.getItem('localPage')))
+    } else {
+      setHomeData(props.homeNewsData);
+    }
   }, []);
 
   const latest = () => {
@@ -107,14 +114,31 @@ const Index = (props) => {
   };
 
   const more = async () => {
-    const result = await fetch(
+    // let cached = await checkIfCached(null, null, `items/${currentPage}`, {});
+
+    let result;
+    // if (!cached) {
+    //   const outcome = await fetch(
+    //     `http://localhost:3000/api/items/${currentPage}`
+    //   );
+    //   const { data } = await outcome.json();
+    //   result = data;
+    //   ssrCache.set(`items/${currentPage}`, result);
+    // } else {
+    //   result = cached;
+    // }
+    const outcome = await fetch(
       `http://localhost:3000/api/items/${currentPage}`
     );
-    const { data } = await result.json();
+    const { data } = await outcome.json();
+
+    result = data;
+    localStorage.setItem('localData', JSON.stringify(data));
+    localStorage.setItem('localPage', JSON.stringify(currentPage));
 
     setCurrentPage((p) => p + 4);
     setBtnChangedData([]); // Reset and come back to homeData
-    setHomeData(data); // Add to homeData
+    setHomeData(result); // Add to homeData
     if (currentBtnClicked === 'latest') latest();
     if (currentBtnClicked === 'popular') popular();
     if (currentBtnClicked === 'under') under();
@@ -273,30 +297,27 @@ const Index = (props) => {
   );
 };
 
-
-
-export const getStaticProps = async (ctx) => {
+export const getStaticProps = async () => {
   // https://nextjs.org/docs/basic-features/data-fetching#write-server-side-code-directly
-
   dbConnect();
   const items = await Item.find();
-  let onlyFive = items.slice(0, 9);
-  
+  let onlyNine = items.slice(0, 9);
+  console.log('HEJ !')
   // const latestNewsResult = await fetch('http://localhost:3000/api/all');
   // const latestNewsData = await latestNewsResult.json();
 
   // let itemsPerPage = await Item.find();
-  let n = items.slice(0, 4);
+  let sliceItems = items.slice(0, 4);
 
   // const homeNewsResult = await fetch(`http://localhost:3000/api/items/1`);
   // const homeNewsData = await homeNewsResult.json();
 
   return {
     props: {
-      latestNewsData: JSON.parse(JSON.stringify(onlyFive)),
-      homeNewsData: JSON.parse(JSON.stringify(n)),
+      latestNewsData: JSON.parse(JSON.stringify(onlyNine)),
+      homeNewsData: JSON.parse(JSON.stringify(sliceItems)),
     },
-    revalidate: 1 //  static content can also be dynamic (ale jakby za 3 razem?). https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation  
+    revalidate: 1, //  static content can also be dynamic (ale jakby za 3 razem?). https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
   };
 };
 

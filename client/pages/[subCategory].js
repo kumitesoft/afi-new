@@ -5,10 +5,12 @@ import { titleFn } from '../helpers/title';
 import Item from '../models/itemModel';
 import dbConnect from '../utils/dbConnection';
 import { pathMenu } from '../helpers/menu';
+import { useRouter } from 'next/router';
 
 const Category = ({ categoryData }) => {
   const title = titleFn(categoryData[0].subCategory);
-  console.log(categoryData, 'categoryData');
+  const router = useRouter();
+
   return (
     <Layout>
       <div className='category_container'>
@@ -22,18 +24,22 @@ const Category = ({ categoryData }) => {
           <p>Ponad 100 roznych sklepow</p>
         </div>
         <div className='category_wrapper'>
-          {categoryData.map((el) => (
-            <Card
-              id={el._id}
-              name={el.name}
-              description={el.description}
-              price={el.price}
-              category={el.category}
-              image={el.image}
-              createdAt={el.createdAt}
-              key={el.name}
-            />
-          ))}
+          {router.callback ? (
+            <p>Loading...</p>
+          ) : (
+            categoryData.map((el) => (
+              <Card
+                id={el._id}
+                name={el.name}
+                description={el.description}
+                price={el.price}
+                category={el.category}
+                image={el.image}
+                createdAt={el.createdAt}
+                key={el.name}
+              />
+            ))
+          )}
         </div>
         <style jsx>
           {`
@@ -121,7 +127,7 @@ export const getStaticPaths = async () => {
   const paths = pathMenu.map((el) => ({
     params: { subCategory: el },
   }));
-  console.log(paths, 'paths');
+
   return {
     // paths: [
     //   {

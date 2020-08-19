@@ -4,6 +4,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import { Router } from 'next/dist/client/router';
 import '../style/styles.scss';
+import { useEffect } from 'react';
 
 NProgress.configure({
   showSpinner: false,
@@ -24,6 +25,12 @@ Router.events.on('routeChangeError', () => {
 });
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    setTimeout(() => {
+      window.localStorage.removeItem('localData'); // INSTEAD OF REDUX
+      window.localStorage.removeItem('localPage');
+    }, 180000);
+  }, []);
   return (
     <>
       <Head>

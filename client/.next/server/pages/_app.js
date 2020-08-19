@@ -178,6 +178,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.configure({
   showSpinner: false,
   trickleRate: 0.1,
@@ -197,6 +198,13 @@ function MyApp({
   Component,
   pageProps
 }) {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setTimeout(() => {
+      window.localStorage.removeItem('localData'); // INSTEAD OF REDUX
+
+      window.localStorage.removeItem('localPage');
+    }, 180000);
+  }, []);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("link", {
     href: "https://fonts.googleapis.com/css2?family=Vollkorn&display=swap",
     rel: "stylesheet"

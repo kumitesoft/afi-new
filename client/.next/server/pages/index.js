@@ -350,6 +350,21 @@ module.exports = __webpack_require__("RNiq");
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("FiKB");
 /* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
 
+
+const LRUCache = __webpack_require__("iDQ1"); // export const ssrCache = new LRUCache({
+//   max: 100,
+//   maxAge: 1000 * 60, // 1hour
+// });
+// export async function checkIfCached(req, res, pagePath, queryParams) {
+//   if (ssrCache.has(pagePath)) {
+//     let result = ssrCache.get(pagePath);
+//     return result;
+//   } else {
+//     return false;
+//   }
+// }
+
+
 const connection = {};
 
 async function dbConnect() {
@@ -927,7 +942,7 @@ const Card = ({
   }, __jsx("a", {
     href: "#!",
     onClick: () => fetch(`http://localhost:3000/api/popularity/${id}`, {
-      method: 'PUT',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       }
@@ -937,6 +952,7 @@ const Card = ({
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.labelBig || "")
   }, "EXTRA"), __jsx("img", {
     src: image,
+    loading: "lazy",
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.imageBig || "")
   })), __jsx("p", {
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.titleBig || "")
@@ -1348,7 +1364,8 @@ var pages_jsx = external_react_default.a.createElement;
 
 
 
-
+ // import { ssrCache, checkIfCached } from '../utils/dbConnection'
+// import useSWR, { mutate, trigger } from 'swr';
 
 const Index = props => {
   const {
@@ -1409,7 +1426,12 @@ const Index = props => {
   }, [pause, slider]); // end of slider configuration ***
 
   Object(external_react_["useEffect"])(() => {
-    setHomeData(props.homeNewsData);
+    if (JSON.parse(localStorage.getItem('localData')) && JSON.parse(localStorage.getItem('localPage'))) {
+      setHomeData(JSON.parse(localStorage.getItem('localData')));
+      setCurrentPage(JSON.parse(localStorage.getItem('localPage')));
+    } else {
+      setHomeData(props.homeNewsData);
+    }
   }, []);
 
   const latest = () => {
@@ -1461,14 +1483,29 @@ const Index = props => {
   };
 
   const more = async () => {
-    const result = await external_isomorphic_unfetch_default()(`http://localhost:3000/api/items/${currentPage}`);
+    // let cached = await checkIfCached(null, null, `items/${currentPage}`, {});
+    let result; // if (!cached) {
+    //   const outcome = await fetch(
+    //     `http://localhost:3000/api/items/${currentPage}`
+    //   );
+    //   const { data } = await outcome.json();
+    //   result = data;
+    //   ssrCache.set(`items/${currentPage}`, result);
+    // } else {
+    //   result = cached;
+    // }
+
+    const outcome = await external_isomorphic_unfetch_default()(`http://localhost:3000/api/items/${currentPage}`);
     const {
       data
-    } = await result.json();
+    } = await outcome.json();
+    result = data;
+    localStorage.setItem('localData', JSON.stringify(data));
+    localStorage.setItem('localPage', JSON.stringify(currentPage));
     setCurrentPage(p => p + 4);
     setBtnChangedData([]); // Reset and come back to homeData
 
-    setHomeData(data); // Add to homeData
+    setHomeData(result); // Add to homeData
 
     if (currentBtnClicked === 'latest') latest();
     if (currentBtnClicked === 'popular') popular();
@@ -1538,23 +1575,24 @@ const Index = props => {
   }, [".slider-configuration.jsx-931979104{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:2rem 0;}", ".slider-box.jsx-931979104{position:relative;}", ".slider-text.jsx-931979104{position:absolute;font-size:3rem;width:34rem;line-height:3rem;text-shadow:1px 1px 0px rgba(0,0,0,0.2);padding:1rem 2rem;background-color:#ffc500;color:#fff;}", ".slider-text-1.jsx-931979104{bottom:30rem;left:-5rem;white-space:nowrap;}", ".slider-text-2.jsx-931979104{bottom:29rem;right:-1rem;}", ".slider-text-3.jsx-931979104{bottom:3rem;left:-10rem;}", ".slider-text-4.jsx-931979104{bottom:2rem;right:-3rem;}", ".star.jsx-931979104{position:absolute;top:-54px;left:-57px;width:9%;-webkit-transform:rotate(-3deg);-ms-transform:rotate(-3deg);transform:rotate(-3deg);}", ".moreBtnDiv.jsx-931979104{text-align:center;margin:3rem 0;}", ".moreBtnDiv.jsx-931979104 button.jsx-931979104{padding:1rem 3rem;border:none;outline:none;}", ".moreBtnDiv.jsx-931979104 button.jsx-931979104:hover{background-color:#ff2a2a;color:#fff;}", ".moreBtnDiv.jsx-931979104 button.jsx-931979104:active{-webkit-transform:translateY(0.3rem);-ms-transform:translateY(0.3rem);transform:translateY(0.3rem);}", "@media only screen and (max-width:1024px){.slider-text-1.jsx-931979104{left:-1rem;}.slider-text-2.jsx-931979104{right:-3rem;}.slider-text-3.jsx-931979104{left:-1rem;}}", "@media only screen and (max-width:768px){.slider-box.jsx-931979104{position:relative;width:95%;margin:0 auto;}.slider-box.jsx-931979104 img.jsx-931979104{width:100%;}.slider-box.jsx-931979104 p.jsx-931979104{font-size:1.8rem;width:100%;padding:0.4rem 0;text-align:center;bottom:0;left:0;}}", "@media only screen and (max-width:510px){.slider-box.jsx-931979104 p.jsx-931979104{font-size:1.3rem;padding:.2rem 0;line-height:inherit;}}"]));
 };
 
-const getStaticProps = async ctx => {
+const getStaticProps = async () => {
   // https://nextjs.org/docs/basic-features/data-fetching#write-server-side-code-directly
   Object(dbConnection["a" /* default */])();
   const items = await itemModel_default.a.find();
-  let onlyFive = items.slice(0, 9); // const latestNewsResult = await fetch('http://localhost:3000/api/all');
+  let onlyNine = items.slice(0, 9);
+  console.log('HEJ !'); // const latestNewsResult = await fetch('http://localhost:3000/api/all');
   // const latestNewsData = await latestNewsResult.json();
   // let itemsPerPage = await Item.find();
 
-  let n = items.slice(0, 4); // const homeNewsResult = await fetch(`http://localhost:3000/api/items/1`);
+  let sliceItems = items.slice(0, 4); // const homeNewsResult = await fetch(`http://localhost:3000/api/items/1`);
   // const homeNewsData = await homeNewsResult.json();
 
   return {
     props: {
-      latestNewsData: JSON.parse(JSON.stringify(onlyFive)),
-      homeNewsData: JSON.parse(JSON.stringify(n))
+      latestNewsData: JSON.parse(JSON.stringify(onlyNine)),
+      homeNewsData: JSON.parse(JSON.stringify(sliceItems))
     },
-    revalidate: 1 //  static content can also be dynamic (ale jakby za 3 razem?). https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation  
+    revalidate: 1 //  static content can also be dynamic (ale jakby za 3 razem?). https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
 
   };
 };
@@ -3019,6 +3057,13 @@ function parseRelativeUrl(url, base) {
     href: href.slice(DUMMY_BASE.origin.length)
   };
 }
+
+/***/ }),
+
+/***/ "iDQ1":
+/***/ (function(module, exports) {
+
+module.exports = require("lru-cache");
 
 /***/ }),
 

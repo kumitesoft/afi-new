@@ -8,7 +8,7 @@ const Card = ({ id, name, description, price, category, image, createdAt }) => {
         href='#!'
         onClick={() =>
           fetch(`http://localhost:3000/api/popularity/${id}`, {
-            method: 'PUT',
+            method: 'POST',
             headers: {
               'Content-Type': 'application/json;charset=utf-8',
             },
