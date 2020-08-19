@@ -1139,7 +1139,6 @@ const Card = ({
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.labelBig || "")
   }, "EXTRA"), __jsx("img", {
     src: image,
-    loading: "lazy",
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.imageBig || "")
   })), __jsx("p", {
     className: "jsx-2085888330" + " " + (_Card_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.titleBig || "")
